@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OpenVRExpansionPlugin-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\TestProjEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\OpenVRExpansionPlugin\Module.OpenVRExpansionPlugin.cpp.obj"
+"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\OpenVRExpansionPlugin\Default.rc2.res"
+/OUT:"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\DebugGame\OpenVRExpansionPlugin\UnrealEditor-OpenVRExpansionPlugin-Win64-DebugGame.lib"

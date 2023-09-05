@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OpenVRExpansionPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\Module.OpenVRExpansionPlugin.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\Default.rc2.res"
+/OUT:"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\UnrealEditor-OpenVRExpansionPlugin.lib"

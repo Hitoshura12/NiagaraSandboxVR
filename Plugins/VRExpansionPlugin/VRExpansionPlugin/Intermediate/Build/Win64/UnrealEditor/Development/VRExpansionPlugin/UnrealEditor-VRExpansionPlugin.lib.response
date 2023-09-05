@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-VRExpansionPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Module.VRExpansionPlugin.1_of_4.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Module.VRExpansionPlugin.2_of_4.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Module.VRExpansionPlugin.3_of_4.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Module.VRExpansionPlugin.4_of_4.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Default.rc2.res"
+/OUT:"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\UnrealEditor-VRExpansionPlugin.lib"

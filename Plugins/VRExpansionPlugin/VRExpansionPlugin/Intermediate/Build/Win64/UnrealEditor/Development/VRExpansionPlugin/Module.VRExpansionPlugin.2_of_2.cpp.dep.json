@@ -1,0 +1,41 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\development\\vrexpansionplugin\\module.vrexpansionplugin.2_of_2.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\documents\\unreal projects\\vrexppluginexp\\intermediate\\build\\win64\\vrexppluginexampleeditor\\development\\unrealed\\sharedpch.unrealed.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\development\\vrexpansionplugin\\definitions.vrexpansionplugin.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\private\\vrexpansionplugin.cpp",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\vrexpansionplugin.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\grippables\\grippablephysicsreplication.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\runtime\\engine\\public\\physicsreplication.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\grippablephysicsreplication.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\vrglobalsettings.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\playerinput.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\runtime\\engine\\public\\gesturerecognizer.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\runtime\\engine\\public\\keystate.h",
+            "c:\\ue4\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\playerinput.generated.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\inputsettings.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\components\\inputcomponent.h",
+            "c:\\ue4\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\inputcomponent.generated.h",
+            "c:\\ue4\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\inputsettings.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\vrbpdatatypes.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\vrbpdatatypes.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\gripscripts\\gs_melee.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\gripscripts\\vrgripscriptbase.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\vrgripscriptbase.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\gripscripts\\gs_default.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\gs_default.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\gs_melee.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\source\\vrexpansionplugin\\public\\gripscripts\\gs_guntools.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\gs_guntools.generated.h",
+            "d:\\documents\\unreal projects\\vrexppluginexp\\plugins\\vrexpansionplugin\\vrexpansionplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\vrexpansionplugin\\uht\\vrglobalsettings.generated.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\developer\\settings\\public\\isettingscontainer.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\developer\\settings\\public\\isettingsmodule.h",
+            "c:\\ue4\\ue_5.1\\engine\\source\\developer\\settings\\public\\isettingssection.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

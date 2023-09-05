@@ -1,0 +1,3 @@
+D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\VRExpansionPlugin\Definitions.VRExpansionPlugin.h
+D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Public\VRBPDatatypes.h
+D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UE4Editor\Inc\VRExpansionPlugin\VRBPDatatypes.generated.h
