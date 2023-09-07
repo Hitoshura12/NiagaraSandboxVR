@@ -64,9 +64,9 @@
 #define UE_BUILD_DEVELOPMENT 1
 #define UE_IS_ENGINE_MODULE 0
 #define UE_DISABLE_INLINE_GEN_CPP 0
-#define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_1 0
-#define UE_PROJECT_NAME VRExpPluginExample
-#define UE_TARGET_NAME VRExpPluginExampleEditor
+#define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_1 1
+#define UE_PROJECT_NAME NiagaraSandboxVR
+#define UE_TARGET_NAME NiagaraSandboxVREditor
 #define UE_MODULE_NAME "OpenXRExpansionEditor"
 #define UE_PLUGIN_NAME "OpenXRExpansionPlugin"
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

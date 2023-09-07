@@ -196,7 +196,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRFullScreenUserWi
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_WidgetRenderTarget_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_WidgetRenderTarget;
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_WidgetRenderTarget;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_bRenderToTextureOnly_MetaData[];
 #endif
@@ -315,7 +315,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRFullScreenUserWi
 		{ "ToolTip", "The target to which the user widget is rendered." },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_WidgetRenderTarget = { "WidgetRenderTarget", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FVRFullScreenUserWidget_PostProcess, WidgetRenderTarget), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_WidgetRenderTarget_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_WidgetRenderTarget_MetaData)) };
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_WidgetRenderTarget = { "WidgetRenderTarget", nullptr, (EPropertyFlags)0x0014000000002000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FVRFullScreenUserWidget_PostProcess, WidgetRenderTarget), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_WidgetRenderTarget_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_WidgetRenderTarget_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewProp_bRenderToTextureOnly_MetaData[] = {
 		{ "Category", "PostProcess" },
@@ -717,7 +717,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRFullScreenUserWi
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Widget_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_Widget;
+		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_Widget;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -804,7 +804,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRFullScreenUserWi
 		{ "ToolTip", "Behavior when the widget should be display by a post process." },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_PostProcessDisplayType = { "PostProcessDisplayType", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRFullScreenUserWidget, PostProcessDisplayType), Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess, METADATA_PARAMS(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_PostProcessDisplayType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_PostProcessDisplayType_MetaData)) }; // 4021541213
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_PostProcessDisplayType = { "PostProcessDisplayType", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRFullScreenUserWidget, PostProcessDisplayType), Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess, METADATA_PARAMS(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_PostProcessDisplayType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_PostProcessDisplayType_MetaData)) }; // 3794419584
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget_MetaData[] = {
 		{ "Comment", "/** The User Widget object displayed and managed by this component */" },
@@ -813,7 +813,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRFullScreenUserWi
 		{ "ToolTip", "The User Widget object displayed and managed by this component" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget = { "Widget", nullptr, (EPropertyFlags)0x0040000000282008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRFullScreenUserWidget, Widget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget_MetaData)) };
+	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget = { "Widget", nullptr, (EPropertyFlags)0x0044000000282008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRFullScreenUserWidget, Widget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_Widget_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVRFullScreenUserWidget_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_EditorDisplayType_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRFullScreenUserWidget_Statics::NewProp_EditorDisplayType,
@@ -1256,13 +1256,13 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRFullScreenUserWi
 	};
 	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::ScriptStructInfo[] = {
 		{ FVRFullScreenUserWidget_Viewport::StaticStruct, Z_Construct_UScriptStruct_FVRFullScreenUserWidget_Viewport_Statics::NewStructOps, TEXT("VRFullScreenUserWidget_Viewport"), &Z_Registration_Info_UScriptStruct_VRFullScreenUserWidget_Viewport, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FVRFullScreenUserWidget_Viewport), 2349335944U) },
-		{ FVRFullScreenUserWidget_PostProcess::StaticStruct, Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewStructOps, TEXT("VRFullScreenUserWidget_PostProcess"), &Z_Registration_Info_UScriptStruct_VRFullScreenUserWidget_PostProcess, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FVRFullScreenUserWidget_PostProcess), 4021541213U) },
+		{ FVRFullScreenUserWidget_PostProcess::StaticStruct, Z_Construct_UScriptStruct_FVRFullScreenUserWidget_PostProcess_Statics::NewStructOps, TEXT("VRFullScreenUserWidget_PostProcess"), &Z_Registration_Info_UScriptStruct_VRFullScreenUserWidget_PostProcess, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FVRFullScreenUserWidget_PostProcess), 3794419584U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVRFullScreenUserWidget, UVRFullScreenUserWidget::StaticClass, TEXT("UVRFullScreenUserWidget"), &Z_Registration_Info_UClass_UVRFullScreenUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRFullScreenUserWidget), 511063443U) },
+		{ Z_Construct_UClass_UVRFullScreenUserWidget, UVRFullScreenUserWidget::StaticClass, TEXT("UVRFullScreenUserWidget"), &Z_Registration_Info_UClass_UVRFullScreenUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRFullScreenUserWidget), 3447138006U) },
 		{ Z_Construct_UClass_AVRFullScreenUserWidgetActor, AVRFullScreenUserWidgetActor::StaticClass, TEXT("AVRFullScreenUserWidgetActor"), &Z_Registration_Info_UClass_AVRFullScreenUserWidgetActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AVRFullScreenUserWidgetActor), 2391299019U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_3247567841(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_3694930717(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::ScriptStructInfo),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VRFullScreenUserWidget_h_Statics::EnumInfo));

@@ -119,7 +119,7 @@ void EmptyLinkFunctionForGeneratedCodeGripMotionControllerComponent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnControllerGripSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnControllerGripSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature_Statics::NewProp_GripInformation,
 	};
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeGripMotionControllerComponent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnControllerDropSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnControllerDropSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	void Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature_Statics::NewProp_bWasSocketed_SetBit(void* Obj)
 	{
 		((_Script_VRExpansionPlugin_eventVROnControllerDropSignature_Parms*)Obj)->bWasSocketed = 1;
@@ -224,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeGripMotionControllerComponent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnControllerSocketSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnControllerSocketSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature_Statics::NewProp_NewParentComp_MetaData[] = {
 		{ "EditInline", "true" },
@@ -310,7 +310,7 @@ void EmptyLinkFunctionForGeneratedCodeGripMotionControllerComponent() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVRGripControllerOnGripOutOfRange_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVRGripControllerOnGripOutOfRange_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_Distance = { "Distance", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVRGripControllerOnGripOutOfRange_Parms, Distance), METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature_Statics::NewProp_GripInformation,
@@ -1721,7 +1721,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_GripToAddAttachment = { "GripToAddAttachment", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventAddSecondaryAttachmentToGrip_Parms, GripToAddAttachment), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_GripToAddAttachment_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_GripToAddAttachment_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_GripToAddAttachment = { "GripToAddAttachment", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventAddSecondaryAttachmentToGrip_Parms, GripToAddAttachment), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_GripToAddAttachment_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_GripToAddAttachment_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip_Statics::NewProp_SecondaryPointComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1913,7 +1913,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventBP_HasGripAuthority_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventBP_HasGripAuthority_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventBP_HasGripAuthority_Parms*)Obj)->ReturnValue = 1;
@@ -2019,7 +2019,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventBP_HasGripMovementAuthority_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventBP_HasGripMovementAuthority_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventBP_HasGripMovementAuthority_Parms*)Obj)->ReturnValue = 1;
@@ -2301,7 +2301,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_GripToSample = { "GripToSample", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventCreateGripRelativeAdditionTransform_BP_Parms, GripToSample), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_GripToSample_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_GripToSample_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_GripToSample = { "GripToSample", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventCreateGripRelativeAdditionTransform_BP_Parms, GripToSample), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_GripToSample_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_GripToSample_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP_Statics::NewProp_AdditionTransform_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2364,7 +2364,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventDestroyPhysicsHandle_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventDestroyPhysicsHandle_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventDestroyPhysicsHandle_BP_Parms*)Obj)->ReturnValue = 1;
@@ -2495,7 +2495,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_GripToDrop = { "GripToDrop", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventDropAndSocketGrip_Parms, GripToDrop), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_GripToDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_GripToDrop_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_GripToDrop = { "GripToDrop", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventDropAndSocketGrip_Parms, GripToDrop), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_GripToDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_GripToDrop_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip_Statics::NewProp_SocketingParent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -2738,7 +2738,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventDropGrip_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventDropGrip_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip_Statics::NewProp_bSimulate_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventDropGrip_Parms*)Obj)->bSimulate = 1;
@@ -2923,8 +2923,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::NewProp_GripArray_Inner = { "GripArray", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::NewProp_GripArray = { "GripArray", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetAllGrips_Parms, GripArray), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::NewProp_GripArray_Inner = { "GripArray", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::NewProp_GripArray = { "GripArray", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetAllGrips_Parms, GripArray), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::NewProp_GripArray_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips_Statics::NewProp_GripArray,
@@ -3018,7 +3018,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByActor_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByActor_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor_Statics::NewProp_ActorToLookForGrip = { "ActorToLookForGrip", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByActor_Parms, ActorToLookForGrip), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByActor_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
@@ -3068,7 +3068,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByComponent_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByComponent_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByComponent_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByComponent_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByComponent_Statics::NewProp_ComponentToLookForGrip_MetaData[] = {
 		{ "EditInline", "true" },
@@ -3120,7 +3120,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByID_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByID_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID_Statics::NewProp_IDToLookForGrip = { "IDToLookForGrip", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByID_Parms, IDToLookForGrip), nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByID_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
@@ -3167,7 +3167,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByObject_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByObject_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject_Statics::NewProp_ObjectToLookForGrip = { "ObjectToLookForGrip", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByObject_Parms, ObjectToLookForGrip), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripByObject_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
@@ -3216,7 +3216,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripDistance_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripDistance_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP_Statics::NewProp_ExpectedLocation = { "ExpectedLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripDistance_BP_Parms, ExpectedLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP_Statics::NewProp_CurrentDistance = { "CurrentDistance", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripDistance_BP_Parms, CurrentDistance), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -3272,7 +3272,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripMass_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripMass_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Mass = { "Mass", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGripMass_Parms, Mass), METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass_Statics::NewProp_Grip,
@@ -3441,7 +3441,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGrippedObjectTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGrippedObjectTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetGrippedObjectTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform_Statics::NewProp_Grip,
@@ -3691,7 +3691,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment_Statics::NewProp_ComponentToCheck = { "ComponentToCheck", nullptr, (EPropertyFlags)0x0010000000080082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetIsSecondaryAttachment_Parms, ComponentToCheck), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment_Statics::NewProp_ComponentToCheck_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment_Statics::NewProp_ComponentToCheck_MetaData)) };
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetIsSecondaryAttachment_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetIsSecondaryAttachment_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventGetIsSecondaryAttachment_Parms*)Obj)->ReturnValue = 1;
@@ -3748,7 +3748,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsConstraintForce_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsConstraintForce_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_AngularForce = { "AngularForce", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsConstraintForce_Parms, AngularForce), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_LinearForce = { "LinearForce", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsConstraintForce_Parms, LinearForce), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -3806,7 +3806,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsHandleSettings_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsHandleSettings_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_PhysicsHandleSettingsOut = { "PhysicsHandleSettingsOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsHandleSettings_Parms, PhysicsHandleSettingsOut), Z_Construct_UScriptStruct_FBPAdvancedPhysicsHandleSettings, METADATA_PARAMS(nullptr, 0) }; // 3765814173
 	void Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
@@ -3862,7 +3862,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsVelocities_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsVelocities_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_AngularVelocity = { "AngularVelocity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsVelocities_Parms, AngularVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::NewProp_LinearVelocity = { "LinearVelocity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventGetPhysicsVelocities_Parms, LinearVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities_Statics::PropPointers[] = {
@@ -4510,7 +4510,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_K2_GetFirstActiveGrip_Statics::NewProp_FirstActiveGrip = { "FirstActiveGrip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventK2_GetFirstActiveGrip_Parms, FirstActiveGrip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_K2_GetFirstActiveGrip_Statics::NewProp_FirstActiveGrip = { "FirstActiveGrip", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventK2_GetFirstActiveGrip_Parms, FirstActiveGrip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_K2_GetFirstActiveGrip_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventK2_GetFirstActiveGrip_Parms*)Obj)->ReturnValue = 1;
@@ -4582,7 +4582,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_NewDrop = { "NewDrop", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventNotifyDrop_Parms, NewDrop), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_NewDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_NewDrop_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_NewDrop = { "NewDrop", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventNotifyDrop_Parms, NewDrop), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_NewDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_NewDrop_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop_Statics::NewProp_bSimulate_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventNotifyDrop_Parms*)Obj)->bSimulate = 1;
@@ -4635,7 +4635,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_NewDrop = { "NewDrop", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventNotifyDropAndSocket_Parms, NewDrop), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_NewDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_NewDrop_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_NewDrop = { "NewDrop", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventNotifyDropAndSocket_Parms, NewDrop), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_NewDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_NewDrop_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket_Statics::NewProp_SocketingParent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -4690,8 +4690,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::NewProp_OriginalArrayState_Inner = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::NewProp_OriginalArrayState = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventOnRep_GrippedObjects_Parms, OriginalArrayState), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::NewProp_OriginalArrayState_Inner = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::NewProp_OriginalArrayState = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventOnRep_GrippedObjects_Parms, OriginalArrayState), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::NewProp_OriginalArrayState_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects_Statics::NewProp_OriginalArrayState,
@@ -4727,8 +4727,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::NewProp_OriginalArrayState_Inner = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::NewProp_OriginalArrayState = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventOnRep_LocallyGrippedObjects_Parms, OriginalArrayState), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::NewProp_OriginalArrayState_Inner = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::NewProp_OriginalArrayState = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventOnRep_LocallyGrippedObjects_Parms, OriginalArrayState), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::NewProp_OriginalArrayState_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects_Statics::NewProp_OriginalArrayState,
@@ -4762,8 +4762,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::NewProp_OriginalArrayState_Inner = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::NewProp_OriginalArrayState = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventOnRep_LocalTransaction_Parms, OriginalArrayState), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::NewProp_OriginalArrayState_Inner = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::NewProp_OriginalArrayState = { "OriginalArrayState", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventOnRep_LocalTransaction_Parms, OriginalArrayState), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::NewProp_OriginalArrayState_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction_Statics::NewProp_OriginalArrayState,
@@ -4858,7 +4858,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_GripToRemoveAttachment = { "GripToRemoveAttachment", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventRemoveSecondaryAttachmentFromGrip_Parms, GripToRemoveAttachment), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_GripToRemoveAttachment_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_GripToRemoveAttachment_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_GripToRemoveAttachment = { "GripToRemoveAttachment", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventRemoveSecondaryAttachmentFromGrip_Parms, GripToRemoveAttachment), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_GripToRemoveAttachment_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_GripToRemoveAttachment_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_LerpToTime = { "LerpToTime", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventRemoveSecondaryAttachmentFromGrip_Parms, LerpToTime), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
@@ -5108,7 +5108,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip = { "newGrip", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventServer_NotifyLocalGripAddedOrChanged_Parms, newGrip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip = { "newGrip", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventServer_NotifyLocalGripAddedOrChanged_Parms, newGrip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged_Statics::NewProp_newGrip,
 	};
@@ -5196,7 +5196,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo = { "SecondaryGripInfo", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventServer_NotifySecondaryAttachmentChanged_Parms, SecondaryGripInfo), Z_Construct_UScriptStruct_FBPSecondaryGripInfo, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo_MetaData)) }; // 2590064182
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo = { "SecondaryGripInfo", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventServer_NotifySecondaryAttachmentChanged_Parms, SecondaryGripInfo), Z_Construct_UScriptStruct_FBPSecondaryGripInfo, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo_MetaData)) }; // 3774723784
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_GripID,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Statics::NewProp_SecondaryGripInfo,
@@ -5241,7 +5241,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_SecondaryGripInfo = { "SecondaryGripInfo", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventServer_NotifySecondaryAttachmentChanged_Retain_Parms, SecondaryGripInfo), Z_Construct_UScriptStruct_FBPSecondaryGripInfo, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_SecondaryGripInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_SecondaryGripInfo_MetaData)) }; // 2590064182
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_SecondaryGripInfo = { "SecondaryGripInfo", nullptr, (EPropertyFlags)0x0010008008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventServer_NotifySecondaryAttachmentChanged_Retain_Parms, SecondaryGripInfo), Z_Construct_UScriptStruct_FBPSecondaryGripInfo, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_SecondaryGripInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_SecondaryGripInfo_MetaData)) }; // 3774723784
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain_Statics::NewProp_NewRelativeTransform_MetaData[] = {
 		{ "NativeConst", "" },
@@ -5380,7 +5380,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripAdditionTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripAdditionTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripAdditionTransform_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 #if WITH_METADATA
@@ -5448,7 +5448,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripCollisionType_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripCollisionType_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripCollisionType_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType_Statics::NewProp_NewGripCollisionType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
@@ -5507,7 +5507,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripHybridLock_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripHybridLock_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripHybridLock_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 	void Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock_Statics::NewProp_bIsLocked_SetBit(void* Obj)
@@ -5568,7 +5568,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripLateUpdateSetting_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripLateUpdateSetting_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripLateUpdateSetting_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting_Statics::NewProp_NewGripLateUpdateSetting_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
@@ -5630,7 +5630,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripPaused_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripPaused_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripPaused_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 	void Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused_Statics::NewProp_bIsPaused_SetBit(void* Obj)
@@ -5700,7 +5700,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripRelativeTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripRelativeTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripRelativeTransform_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 #if WITH_METADATA
@@ -5769,7 +5769,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripStiffnessAndDamping_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripStiffnessAndDamping_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripStiffnessAndDamping_Parms, Result), Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 3212684435
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping_Statics::NewProp_NewStiffness = { "NewStiffness", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetGripStiffnessAndDamping_Parms, NewStiffness), METADATA_PARAMS(nullptr, 0) };
@@ -5842,7 +5842,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetPausedTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetPausedTransform_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform_Statics::NewProp_PausedTransform_MetaData[] = {
 		{ "NativeConst", "" },
@@ -5907,7 +5907,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetPhysicsHandleSettings_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetPhysicsHandleSettings_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings_Statics::NewProp_PhysicsHandleSettingsIn_MetaData[] = {
 		{ "NativeConst", "" },
@@ -6013,7 +6013,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetUpPhysicsHandle_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventSetUpPhysicsHandle_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventSetUpPhysicsHandle_BP_Parms*)Obj)->ReturnValue = 1;
@@ -6064,7 +6064,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrip_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventTeleportMoveGrip_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrip_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventTeleportMoveGrip_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrip_Statics::NewProp_bTeleportPhysicsGrips_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventTeleportMoveGrip_Parms*)Obj)->bTeleportPhysicsGrips = 1;
@@ -6300,7 +6300,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventUpdatePhysicsHandle_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventUpdatePhysicsHandle_BP_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP_Statics::NewProp_bFullyRecreate_SetBit(void* Obj)
 	{
 		((GripMotionControllerComponent_eventUpdatePhysicsHandle_BP_Parms*)Obj)->bFullyRecreate = 1;
@@ -6362,7 +6362,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_GrippedActor = { "GrippedActor", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventUpdatePhysicsHandleTransform_BP_Parms, GrippedActor), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_GrippedActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_GrippedActor_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_GrippedActor = { "GrippedActor", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GripMotionControllerComponent_eventUpdatePhysicsHandleTransform_BP_Parms, GrippedActor), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_GrippedActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_GrippedActor_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP_Statics::NewProp_NewTransform_MetaData[] = {
 		{ "NativeConst", "" },
@@ -6609,6 +6609,23 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		static void NewProp_bSmoothReplicatedMotion_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bSmoothReplicatedMotion;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bUseExponentialSmoothing_MetaData[];
+#endif
+		static void NewProp_bUseExponentialSmoothing_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bUseExponentialSmoothing;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_InterpolationSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_InterpolationSpeed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_NetworkMaxSmoothUpdateDistance_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_NetworkMaxSmoothUpdateDistance;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_NetworkNoSmoothUpdateDistance_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_NetworkNoSmoothUpdateDistance;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_bReplicateWithoutTracking_MetaData[];
 #endif
 		static void NewProp_bReplicateWithoutTracking_SetBit(void* Obj);
@@ -6638,45 +6655,45 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGripMotionControllerComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentPoint, "AddSecondaryAttachmentPoint" }, // 1057743922
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip, "AddSecondaryAttachmentToGrip" }, // 3077168906
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGrip, "AddSecondaryAttachmentToGrip" }, // 1055282644
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentToGripByID, "AddSecondaryAttachmentToGripByID" }, // 3624257028
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority, "BP_HasGripAuthority" }, // 750929492
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority, "BP_HasGripAuthority" }, // 2545952433
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthorityForObject, "BP_HasGripAuthorityForObject" }, // 3153190017
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority, "BP_HasGripMovementAuthority" }, // 3413980443
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority, "BP_HasGripMovementAuthority" }, // 714607522
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_BP_IsLocallyControlled, "BP_IsLocallyControlled" }, // 3783380202
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_CancelGlobalLerpToHand, "CancelGlobalLerpToHand" }, // 2359845196
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Client_NotifyInvalidLocalGrip, "Client_NotifyInvalidLocalGrip" }, // 517069173
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_ConvertToControllerRelativeTransform, "ConvertToControllerRelativeTransform" }, // 142056849
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_ConvertToGripRelativeTransform, "ConvertToGripRelativeTransform" }, // 2802757671
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP, "CreateGripRelativeAdditionTransform_BP" }, // 4222780203
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP, "DestroyPhysicsHandle_BP" }, // 2361992853
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP, "CreateGripRelativeAdditionTransform_BP" }, // 146927269
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DestroyPhysicsHandle_BP, "DestroyPhysicsHandle_BP" }, // 3042998896
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropActor, "DropActor" }, // 2082225962
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip, "DropAndSocketGrip" }, // 1006752100
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketGrip, "DropAndSocketGrip" }, // 1102881455
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropAndSocketObject, "DropAndSocketObject" }, // 3195608768
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropComponent, "DropComponent" }, // 118731320
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip, "DropGrip" }, // 945612219
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip, "DropGrip" }, // 2497288374
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropObject, "DropObject" }, // 559841952
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_DropObjectByInterface, "DropObjectByInterface" }, // 2759197276
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips, "GetAllGrips" }, // 2193363244
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetAllGrips, "GetAllGrips" }, // 2109395453
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetControllerDeviceID, "GetControllerDeviceID" }, // 4034785286
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor, "GetGripByActor" }, // 2122915800
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByComponent, "GetGripByComponent" }, // 318555982
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID, "GetGripByID" }, // 2060413946
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject, "GetGripByObject" }, // 3938607217
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP, "GetGripDistance_BP" }, // 904991898
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass, "GetGripMass" }, // 2695917981
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor, "GetGripByActor" }, // 3470804298
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByComponent, "GetGripByComponent" }, // 1973368699
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByID, "GetGripByID" }, // 2937133111
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject, "GetGripByObject" }, // 1913603807
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripDistance_BP, "GetGripDistance_BP" }, // 862371026
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGripMass, "GetGripMass" }, // 3911796143
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedActors, "GetGrippedActors" }, // 993889240
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedComponents, "GetGrippedComponents" }, // 793709680
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjects, "GetGrippedObjects" }, // 2190537141
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform, "GetGrippedObjectTransform" }, // 2504013556
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjectTransform, "GetGrippedObjectTransform" }, // 534294796
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetHandType, "GetHandType" }, // 264641872
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetIsComponentHeld, "GetIsComponentHeld" }, // 2333711330
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetIsHeld, "GetIsHeld" }, // 4209489980
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetIsObjectHeld, "GetIsObjectHeld" }, // 1550793313
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment, "GetIsSecondaryAttachment" }, // 2980613919
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce, "GetPhysicsConstraintForce" }, // 3433606868
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings, "GetPhysicsHandleSettings" }, // 3671215112
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities, "GetPhysicsVelocities" }, // 3720200292
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment, "GetIsSecondaryAttachment" }, // 4128315388
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsConstraintForce, "GetPhysicsConstraintForce" }, // 3538690571
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsHandleSettings, "GetPhysicsHandleSettings" }, // 2684390933
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities, "GetPhysicsVelocities" }, // 1132377562
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPivotLocation_BP, "GetPivotLocation_BP" }, // 735730164
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GetPivotTransform_BP, "GetPivotTransform_BP" }, // 2629061965
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GripActor, "GripActor" }, // 3678639903
@@ -6685,43 +6702,43 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GripObject, "GripObject" }, // 1410571738
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_GripObjectByInterface, "GripObjectByInterface" }, // 2895877622
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_HasGrippedObjects, "HasGrippedObjects" }, // 667469174
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_K2_GetFirstActiveGrip, "K2_GetFirstActiveGrip" }, // 30920409
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_K2_GetFirstActiveGrip, "K2_GetFirstActiveGrip" }, // 3536335588
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_NewControllerProfileLoaded, "NewControllerProfileLoaded" }, // 1289061425
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop, "NotifyDrop" }, // 3335154764
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket, "NotifyDropAndSocket" }, // 2796345511
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects, "OnRep_GrippedObjects" }, // 3832636692
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects, "OnRep_LocallyGrippedObjects" }, // 3672140723
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction, "OnRep_LocalTransaction" }, // 3777654893
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop, "NotifyDrop" }, // 651713634
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDropAndSocket, "NotifyDropAndSocket" }, // 181325423
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedObjects, "OnRep_GrippedObjects" }, // 1689603406
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedObjects, "OnRep_LocallyGrippedObjects" }, // 3830586678
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocalTransaction, "OnRep_LocalTransaction" }, // 4160477904
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_ReplicatedControllerTransform, "OnRep_ReplicatedControllerTransform" }, // 745237567
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_PostTeleportMoveGrippedObjects, "PostTeleportMoveGrippedObjects" }, // 151219531
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip, "RemoveSecondaryAttachmentFromGrip" }, // 3746355764
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGrip, "RemoveSecondaryAttachmentFromGrip" }, // 1173985148
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentFromGripByID, "RemoveSecondaryAttachmentFromGripByID" }, // 1520376624
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentPoint, "RemoveSecondaryAttachmentPoint" }, // 1235439428
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyDropAndSocketGrip, "Server_NotifyDropAndSocketGrip" }, // 3980038527
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyHandledTransaction, "Server_NotifyHandledTransaction" }, // 3499623861
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged, "Server_NotifyLocalGripAddedOrChanged" }, // 2077165597
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged, "Server_NotifyLocalGripAddedOrChanged" }, // 436203545
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripRemoved, "Server_NotifyLocalGripRemoved" }, // 3586929846
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged, "Server_NotifySecondaryAttachmentChanged" }, // 1516740323
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain, "Server_NotifySecondaryAttachmentChanged_Retain" }, // 2208356523
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged, "Server_NotifySecondaryAttachmentChanged" }, // 1378724863
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged_Retain, "Server_NotifySecondaryAttachmentChanged_Retain" }, // 3007173348
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_Server_SendControllerTransform, "Server_SendControllerTransform" }, // 2748630181
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetCustomPivotComponent, "SetCustomPivotComponent" }, // 3058119273
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform, "SetGripAdditionTransform" }, // 3504549471
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType, "SetGripCollisionType" }, // 1697411455
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock, "SetGripHybridLock" }, // 4208513940
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting, "SetGripLateUpdateSetting" }, // 3848666871
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused, "SetGripPaused" }, // 2050683613
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform, "SetGripRelativeTransform" }, // 4080306636
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping, "SetGripStiffnessAndDamping" }, // 581724226
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform, "SetPausedTransform" }, // 71779767
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings, "SetPhysicsHandleSettings" }, // 2473712311
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform, "SetGripAdditionTransform" }, // 2845455013
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType, "SetGripCollisionType" }, // 1499534255
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripHybridLock, "SetGripHybridLock" }, // 3781601105
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting, "SetGripLateUpdateSetting" }, // 2043011031
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripPaused, "SetGripPaused" }, // 4259316009
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform, "SetGripRelativeTransform" }, // 4233777042
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping, "SetGripStiffnessAndDamping" }, // 1894483554
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetPausedTransform, "SetPausedTransform" }, // 1496340363
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetPhysicsHandleSettings, "SetPhysicsHandleSettings" }, // 4141672511
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetSocketTransform, "SetSocketTransform" }, // 2895675384
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP, "SetUpPhysicsHandle_BP" }, // 3687585764
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrip, "TeleportMoveGrip" }, // 2365530759
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_SetUpPhysicsHandle_BP, "SetUpPhysicsHandle_BP" }, // 3028176946
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrip, "TeleportMoveGrip" }, // 1433783099
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrippedActor, "TeleportMoveGrippedActor" }, // 2351847303
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrippedComponent, "TeleportMoveGrippedComponent" }, // 3198568844
 		{ &Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrips, "TeleportMoveGrips" }, // 2463109193
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP, "UpdatePhysicsHandle_BP" }, // 1345399375
-		{ &Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP, "UpdatePhysicsHandleTransform_BP" }, // 3504455718
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandle_BP, "UpdatePhysicsHandle_BP" }, // 1884576721
+		{ &Z_Construct_UFunction_UGripMotionControllerComponent_UpdatePhysicsHandleTransform_BP, "UpdatePhysicsHandleTransform_BP" }, // 3184586096
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::Class_MetaDataParams[] = {
@@ -6777,7 +6794,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "UPROPERTY(BlueprintAssignable, Category = \"Grip Events\")\n       FVROnControllerGripSignature OnLerpToHandBegin;" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnLerpToHandFinished = { "OnLerpToHandFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnLerpToHandFinished), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnLerpToHandFinished_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnLerpToHandFinished_MetaData)) }; // 1771639175
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnLerpToHandFinished = { "OnLerpToHandFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnLerpToHandFinished), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnLerpToHandFinished_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnLerpToHandFinished_MetaData)) }; // 2422212486
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bScaleTracking_MetaData[] = {
 		{ "Category", "GripMotionController|Advanced|Tracking" },
@@ -7016,7 +7033,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when the controller profile changed and we have a new transform (only if bOffsetByControllerProfile is true)" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripOutOfRange = { "OnGripOutOfRange", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnGripOutOfRange), Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripOutOfRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripOutOfRange_MetaData)) }; // 1558483487
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripOutOfRange = { "OnGripOutOfRange", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnGripOutOfRange), Z_Construct_UDelegateFunction_VRExpansionPlugin_VRGripControllerOnGripOutOfRange__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripOutOfRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripOutOfRange_MetaData)) }; // 4004380671
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnTrackingChanged_MetaData[] = {
 		{ "Category", "GripMotionController" },
@@ -7034,7 +7051,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when a object is gripped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGrippedObject = { "OnGrippedObject", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnGrippedObject), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGrippedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGrippedObject_MetaData)) }; // 1771639175
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGrippedObject = { "OnGrippedObject", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnGrippedObject), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGrippedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGrippedObject_MetaData)) }; // 2422212486
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -7043,7 +7060,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when a object is dropped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject = { "OnDroppedObject", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnDroppedObject), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject_MetaData)) }; // 1513861692
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject = { "OnDroppedObject", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnDroppedObject), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnDroppedObject_MetaData)) }; // 2048454365
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -7052,7 +7069,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when a object is being socketed, prior to OnDrop being called and prior to the actual socketing being performed\nGenerally an early entry to detach hands and handle pre-socketing logic" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject = { "OnSocketingObject", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnSocketingObject), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject_MetaData)) }; // 220608161
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject = { "OnSocketingObject", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnSocketingObject), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerSocketSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSocketingObject_MetaData)) }; // 95194182
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnTeleportedGrips_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -7070,7 +7087,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when an object we hold is secondary gripped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripAdded = { "OnSecondaryGripAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnSecondaryGripAdded), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData)) }; // 1771639175
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripAdded = { "OnSecondaryGripAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnSecondaryGripAdded), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData)) }; // 2422212486
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -7079,7 +7096,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when an object we hold is secondary dropped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved = { "OnSecondaryGripRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnSecondaryGripRemoved), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData)) }; // 1771639175
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved = { "OnSecondaryGripRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnSecondaryGripRemoved), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData)) }; // 2422212486
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -7088,7 +7105,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Called when an object we hold has its grip transform changed" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged = { "OnGripTransformChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnGripTransformChanged), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged_MetaData)) }; // 1771639175
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged = { "OnGripTransformChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, OnGripTransformChanged), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnControllerGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_OnGripTransformChanged_MetaData)) }; // 2422212486
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_CustomPivotComponent_MetaData[] = {
 		{ "Category", "GripMotionController|CustomPivot" },
@@ -7121,7 +7138,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		((UGripMotionControllerComponent*)Obj)->bSkipPivotTransformAdjustment = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSkipPivotTransformAdjustment = { "bSkipPivotTransformAdjustment", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UGripMotionControllerComponent), &Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSkipPivotTransformAdjustment_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSkipPivotTransformAdjustment_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSkipPivotTransformAdjustment_MetaData)) };
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_Inner = { "GrippedObjects", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_Inner = { "GrippedObjects", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_MetaData[] = {
 		{ "Category", "GripMotionController" },
@@ -7130,8 +7147,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "When possible I suggest that you use GetAllGrips/GetGrippedObjects instead of directly referencing this" },
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects = { "GrippedObjects", "OnRep_GrippedObjects", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, GrippedObjects), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_MetaData)) }; // 2017937111
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_Inner = { "LocallyGrippedObjects", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects = { "GrippedObjects", "OnRep_GrippedObjects", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, GrippedObjects), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_GrippedObjects_MetaData)) }; // 3975863413
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_Inner = { "LocallyGrippedObjects", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_MetaData[] = {
 		{ "Category", "GripMotionController" },
@@ -7140,8 +7157,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "When possible I suggest that you use GetAllGrips/GetGrippedObjects instead of directly referencing this" },
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects = { "LocallyGrippedObjects", "OnRep_LocallyGrippedObjects", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, LocallyGrippedObjects), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_MetaData)) }; // 2017937111
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_Inner = { "LocalTransactionBuffer", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 2017937111
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects = { "LocallyGrippedObjects", "OnRep_LocallyGrippedObjects", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, LocallyGrippedObjects), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocallyGrippedObjects_MetaData)) }; // 3975863413
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_Inner = { "LocalTransactionBuffer", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(nullptr, 0) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_MetaData[] = {
 		{ "Category", "GripMotionController" },
@@ -7150,7 +7167,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ "ToolTip", "Local Grip TransactionalBuffer to store server sided grips that need to be emplaced into the local buffer" },
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer = { "LocalTransactionBuffer", "OnRep_LocalTransaction", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, LocalTransactionBuffer), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer = { "LocalTransactionBuffer", "OnRep_LocalTransaction", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, LocalTransactionBuffer), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_LocalTransactionBuffer_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ClientAuthConflictResolutionMethod_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ClientAuthConflictResolutionMethod_MetaData[] = {
@@ -7201,9 +7218,9 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ControllerNetUpdateRate_MetaData[] = {
 		{ "Category", "GripMotionController|Networking" },
 		{ "ClampMin", "0" },
-		{ "Comment", "// Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick).\n" },
+		{ "Comment", "// Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick).\n// On dedicated servers the update rate should be at or lower than the server tick rate for smoothing to work\n" },
 		{ "ModuleRelativePath", "Public/GripMotionControllerComponent.h" },
-		{ "ToolTip", "Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick)." },
+		{ "ToolTip", "Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick).\nOn dedicated servers the update rate should be at or lower than the server tick rate for smoothing to work" },
 		{ "UIMin", "0" },
 	};
 #endif
@@ -7221,6 +7238,50 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		((UGripMotionControllerComponent*)Obj)->bSmoothReplicatedMotion = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSmoothReplicatedMotion = { "bSmoothReplicatedMotion", nullptr, (EPropertyFlags)0x0010000000000025, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UGripMotionControllerComponent), &Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSmoothReplicatedMotion_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSmoothReplicatedMotion_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSmoothReplicatedMotion_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing_MetaData[] = {
+		{ "Category", "GripMotionController|Networking|Smoothing" },
+		{ "Comment", "// If true then we will use exponential smoothing with buffered correction\n" },
+		{ "editcondition", "bSmoothReplicatedMotion" },
+		{ "ModuleRelativePath", "Public/GripMotionControllerComponent.h" },
+		{ "ToolTip", "If true then we will use exponential smoothing with buffered correction" },
+	};
+#endif
+	void Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing_SetBit(void* Obj)
+	{
+		((UGripMotionControllerComponent*)Obj)->bUseExponentialSmoothing = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing = { "bUseExponentialSmoothing", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UGripMotionControllerComponent), &Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_InterpolationSpeed_MetaData[] = {
+		{ "Category", "GripMotionController|Networking|Smoothing" },
+		{ "Comment", "// Timestep of smoothing translation\n" },
+		{ "editcondition", "bUseExponentialSmoothing" },
+		{ "ModuleRelativePath", "Public/GripMotionControllerComponent.h" },
+		{ "ToolTip", "Timestep of smoothing translation" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_InterpolationSpeed = { "InterpolationSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, InterpolationSpeed), METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_InterpolationSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_InterpolationSpeed_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance_MetaData[] = {
+		{ "Category", "GripMotionController|Networking|Smoothing" },
+		{ "Comment", "// Max distance to allow smoothing before snapping the remainder\n" },
+		{ "editcondition", "bUseExponentialSmoothing" },
+		{ "ModuleRelativePath", "Public/GripMotionControllerComponent.h" },
+		{ "ToolTip", "Max distance to allow smoothing before snapping the remainder" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance = { "NetworkMaxSmoothUpdateDistance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, NetworkMaxSmoothUpdateDistance), METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance_MetaData[] = {
+		{ "Category", "GripMotionController|Networking|Smoothing" },
+		{ "Comment", "// Max distance to allow smoothing before snapping entirely to the new position\n" },
+		{ "editcondition", "bUseExponentialSmoothing" },
+		{ "ModuleRelativePath", "Public/GripMotionControllerComponent.h" },
+		{ "ToolTip", "Max distance to allow smoothing before snapping entirely to the new position" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance = { "NetworkNoSmoothUpdateDistance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGripMotionControllerComponent, NetworkNoSmoothUpdateDistance), METADATA_PARAMS(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bReplicateWithoutTracking_MetaData[] = {
 		{ "Category", "GripMotionController|Networking" },
@@ -7322,6 +7383,10 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ReplicatedControllerTransform,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ControllerNetUpdateRate,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bSmoothReplicatedMotion,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bUseExponentialSmoothing,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_InterpolationSpeed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_bReplicateWithoutTracking,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ObjectsWaitingForSocketUpdate_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGripMotionControllerComponent_Statics::NewProp_ObjectsWaitingForSocketUpdate,
@@ -7390,9 +7455,9 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FGripComponentEndPh
 		{ FGripComponentEndPhysicsTickFunction::StaticStruct, Z_Construct_UScriptStruct_FGripComponentEndPhysicsTickFunction_Statics::NewStructOps, TEXT("GripComponentEndPhysicsTickFunction"), &Z_Registration_Info_UScriptStruct_GripComponentEndPhysicsTickFunction, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FGripComponentEndPhysicsTickFunction), 236960544U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGripMotionControllerComponent, UGripMotionControllerComponent::StaticClass, TEXT("UGripMotionControllerComponent"), &Z_Registration_Info_UClass_UGripMotionControllerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGripMotionControllerComponent), 1463977021U) },
+		{ Z_Construct_UClass_UGripMotionControllerComponent, UGripMotionControllerComponent::StaticClass, TEXT("UGripMotionControllerComponent"), &Z_Registration_Info_UClass_UGripMotionControllerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGripMotionControllerComponent), 3795288420U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_1613200981(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_1405685529(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripMotionControllerComponent_h_Statics::ScriptStructInfo),
 		nullptr, 0);

@@ -189,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVRDialComponent_AddDialAngle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "VRLeverComponent" },
+		{ "Category", "VRDialComponent" },
 		{ "Comment", "// Can be called to recalculate the dial angle after you move it if you want different values\n" },
 		{ "CPP_Default_bCallEvents", "false" },
 		{ "CPP_Default_bSkipSettingRot", "false" },
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVRDialComponent_ResetInitialDialLocation_Statics::Function_MetaDataParams[] = {
-		{ "Category", "VRLeverComponent" },
+		{ "Category", "VRDialComponent" },
 		{ "Comment", "// Should be called after the dial is moved post begin play\n" },
 		{ "ModuleRelativePath", "Public/Interactibles/VRDialComponent.h" },
 		{ "ToolTip", "Should be called after the dial is moved post begin play" },
@@ -334,7 +334,7 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVRDialComponent_SetDialAngle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "VRLeverComponent" },
+		{ "Category", "VRDialComponent" },
 		{ "Comment", "// Directly sets the dial angle, still obeys maximum limits and snapping though\n" },
 		{ "CPP_Default_bCallEvents", "false" },
 		{ "ModuleRelativePath", "Public/Interactibles/VRDialComponent.h" },
@@ -555,12 +555,12 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_VRExpansionPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UVRDialComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UVRDialComponent_AddDialAngle, "AddDialAngle" }, // 3510348094
+		{ &Z_Construct_UFunction_UVRDialComponent_AddDialAngle, "AddDialAngle" }, // 4046392118
 		{ &Z_Construct_UFunction_UVRDialComponent_OnRep_InitialRelativeTransform, "OnRep_InitialRelativeTransform" }, // 3493621210
 		{ &Z_Construct_UFunction_UVRDialComponent_ReceiveDialFinishedLerping, "ReceiveDialFinishedLerping" }, // 3696701930
 		{ &Z_Construct_UFunction_UVRDialComponent_ReceiveDialHitSnapAngle, "ReceiveDialHitSnapAngle" }, // 1093889500
-		{ &Z_Construct_UFunction_UVRDialComponent_ResetInitialDialLocation, "ResetInitialDialLocation" }, // 4033137483
-		{ &Z_Construct_UFunction_UVRDialComponent_SetDialAngle, "SetDialAngle" }, // 464849026
+		{ &Z_Construct_UFunction_UVRDialComponent_ResetInitialDialLocation, "ResetInitialDialLocation" }, // 2058707983
+		{ &Z_Construct_UFunction_UVRDialComponent_SetDialAngle, "SetDialAngle" }, // 1953439274
 		{ &Z_Construct_UFunction_UVRDialComponent_SetGripPriority, "SetGripPriority" }, // 2607880087
 	};
 #if WITH_METADATA
@@ -877,7 +877,7 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 		{ "ToolTip", "Called when a object is gripped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnGripped = { "OnGripped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRDialComponent, OnGripped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnGripped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnGripped_MetaData)) }; // 751591806
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnGripped = { "OnGripped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRDialComponent, OnGripped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnGripped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnGripped_MetaData)) }; // 3502606547
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -886,7 +886,7 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 		{ "ToolTip", "Called when a object is dropped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped = { "OnDropped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRDialComponent, OnDropped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped_MetaData)) }; // 1793324043
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped = { "OnDropped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRDialComponent, OnDropped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRDialComponent_Statics::NewProp_OnDropped_MetaData)) }; // 3758456689
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRDialComponent_Statics::NewProp_BreakDistance_MetaData[] = {
 		{ "Category", "VRGripInterface" },
@@ -950,7 +950,7 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRDialComponent_Statics::NewProp_bDenyGripping,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UVRDialComponent_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UVRGripInterface_NoRegister, (int32)VTABLE_OFFSET(UVRDialComponent, IVRGripInterface), false },  // 2675698684
+			{ Z_Construct_UClass_UVRGripInterface_NoRegister, (int32)VTABLE_OFFSET(UVRDialComponent, IVRGripInterface), false },  // 3570845334
 			{ Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister, (int32)VTABLE_OFFSET(UVRDialComponent, IGameplayTagAssetInterface), false },  // 3654419898
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UVRDialComponent_Statics::StaticCppClassTypeInfo = {
@@ -1005,9 +1005,9 @@ void EmptyLinkFunctionForGeneratedCodeVRDialComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRDialComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVRDialComponent, UVRDialComponent::StaticClass, TEXT("UVRDialComponent"), &Z_Registration_Info_UClass_UVRDialComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRDialComponent), 3709416656U) },
+		{ Z_Construct_UClass_UVRDialComponent, UVRDialComponent::StaticClass, TEXT("UVRDialComponent"), &Z_Registration_Info_UClass_UVRDialComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRDialComponent), 3042881881U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRDialComponent_h_1323267575(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRDialComponent_h_4238185987(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRDialComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRDialComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

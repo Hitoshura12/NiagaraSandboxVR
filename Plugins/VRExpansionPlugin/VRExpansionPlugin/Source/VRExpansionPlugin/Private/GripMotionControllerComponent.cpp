@@ -149,6 +149,9 @@ UGripMotionControllerComponent::UGripMotionControllerComponent(const FObjectInit
 
 	SetIsReplicatedByDefault(true);
 
+	// Epic never initializes this variable, so I need to
+	CurrentTrackingStatus = ETrackingStatus::NotTracked;
+
 	// Default 100 htz update rate, same as the 100htz update rate of rep_notify, will be capped to 90/45 though because of vsync on HMD
 	//bReplicateControllerTransform = true;
 	ControllerNetUpdateRate = 100.0f; // 100 htz is default
@@ -186,7 +189,6 @@ UGripMotionControllerComponent::UGripMotionControllerComponent(const FObjectInit
 	bSkipPivotTransformAdjustment = false;
 
 	bOffsetByControllerProfile = true;
-	GripRenderThreadProfileTransform = FTransform::Identity;
 	CurrentControllerProfileTransform = FTransform::Identity;
 
 	DefaultGripScript = nullptr;
@@ -528,10 +530,31 @@ void UGripMotionControllerComponent::CreateRenderState_Concurrent(FRegisterCompo
 	// Don't bother updating this stuff if we aren't local or using them
 	if (bHasAuthority && !bDisableLowLatencyUpdate && IsActive())
 	{
-		GripRenderThreadRelativeTransform = GetRelativeTransform();
-		GripRenderThreadComponentScale = GetComponentScale();
-		GripRenderThreadProfileTransform = CurrentControllerProfileTransform;
-		GripRenderThreadLastLocationForLateUpdate = LastLocationForLateUpdate;
+		LateUpdateParams.GripRenderThreadRelativeTransform = GetRelativeTransform();
+		LateUpdateParams.GripRenderThreadComponentScale = GetComponentScale();
+		LateUpdateParams.GripRenderThreadProfileTransform = CurrentControllerProfileTransform;
+		LateUpdateParams.GripRenderThreadLastLocationForLateUpdate = LastLocationForLateUpdate;
+
+		LateUpdateParams.bRenderSmoothHandTracking = bSmoothHandTracking;
+		if (LateUpdateParams.bRenderSmoothHandTracking)
+		{
+			if (UWorld* world = GetWorld())
+			{
+				LateUpdateParams.RenderLastDeltaTime = world->GetDeltaSeconds();
+			}
+
+			LateUpdateParams.bRenderSmoothWithEuroLowPassFunction = bSmoothWithEuroLowPassFunction;
+			
+			if (LateUpdateParams.bRenderSmoothWithEuroLowPassFunction)
+			{
+				LateUpdateParams.RenderEuroSmoothingParams = EuroSmoothingParams;
+			}
+			else
+			{
+				LateUpdateParams.RenderSmoothingSpeed = SmoothingSpeed;
+				LateUpdateParams.RenderLastSmoothRelativeTransform = LastSmoothRelativeTransform;
+			}
+		}
 	}
 
 	Super::Super::CreateRenderState_Concurrent(Context);
@@ -544,25 +567,40 @@ void UGripMotionControllerComponent::SendRenderTransform_Concurrent()
 	{
 		struct FPrimitiveUpdateRenderThreadRelativeTransformParams
 		{
-			FTransform RenderThreadRelativeTransform;
-			FVector RenderThreadComponentScale;
-			FTransform RenderThreadProfileTransform;
-			FVector GripRenderThreadLastLocationForLateUpdate;
+			FRenderTrackingParams LateUpdateParams;
 		};
 
 		FPrimitiveUpdateRenderThreadRelativeTransformParams UpdateParams;
-		UpdateParams.RenderThreadRelativeTransform = GetRelativeTransform();
-		UpdateParams.RenderThreadComponentScale = GetComponentScale();
-		UpdateParams.RenderThreadProfileTransform = CurrentControllerProfileTransform;
-		UpdateParams.GripRenderThreadLastLocationForLateUpdate = LastLocationForLateUpdate;
+		UpdateParams.LateUpdateParams.GripRenderThreadRelativeTransform = GetRelativeTransform();
+		UpdateParams.LateUpdateParams.GripRenderThreadComponentScale = GetComponentScale();
+		UpdateParams.LateUpdateParams.GripRenderThreadProfileTransform = CurrentControllerProfileTransform;
+		UpdateParams.LateUpdateParams.GripRenderThreadLastLocationForLateUpdate = LastLocationForLateUpdate;
+
+		UpdateParams.LateUpdateParams.bRenderSmoothHandTracking = bSmoothHandTracking;
+		if (UpdateParams.LateUpdateParams.bRenderSmoothHandTracking)
+		{
+			if (UWorld* world = GetWorld())
+			{
+				UpdateParams.LateUpdateParams.RenderLastDeltaTime = world->GetDeltaSeconds();
+			}
+
+			UpdateParams.LateUpdateParams.bRenderSmoothWithEuroLowPassFunction = bSmoothWithEuroLowPassFunction;
+
+			if (UpdateParams.LateUpdateParams.bRenderSmoothWithEuroLowPassFunction)
+			{
+				UpdateParams.LateUpdateParams.RenderEuroSmoothingParams = EuroSmoothingParams;
+			}
+			else
+			{
+				UpdateParams.LateUpdateParams.RenderSmoothingSpeed = SmoothingSpeed;
+				UpdateParams.LateUpdateParams.RenderLastSmoothRelativeTransform = LastSmoothRelativeTransform;
+			}
+		}
 
 		ENQUEUE_RENDER_COMMAND(UpdateRTRelativeTransformCommand)(
 			[UpdateParams, this](FRHICommandListImmediate& RHICmdList)
 			{
-				GripRenderThreadRelativeTransform = UpdateParams.RenderThreadRelativeTransform;
-				GripRenderThreadComponentScale = UpdateParams.RenderThreadComponentScale;
-				GripRenderThreadProfileTransform = UpdateParams.RenderThreadProfileTransform;
-				GripRenderThreadLastLocationForLateUpdate = UpdateParams.GripRenderThreadLastLocationForLateUpdate;
+				LateUpdateParams = UpdateParams.LateUpdateParams;
 			});
 	}
 
@@ -1361,7 +1399,12 @@ bool UGripMotionControllerComponent::GripObjectByInterface(UObject * ObjectToGri
 	return false;
 }
 
-bool UGripMotionControllerComponent::DropObjectByInterface(UObject * ObjectToDrop, uint8 GripIDToDrop, FVector OptionalAngularVelocity, FVector OptionalLinearVelocity)
+bool UGripMotionControllerComponent::DropObjectByInterface(UObject* ObjectToDrop, uint8 GripIDToDrop, FVector OptionalAngularVelocity, FVector OptionalLinearVelocity)
+{
+	return DropObjectByInterface_Implementation(ObjectToDrop, GripIDToDrop, OptionalAngularVelocity, OptionalLinearVelocity, false);
+}
+
+bool UGripMotionControllerComponent::DropObjectByInterface_Implementation(UObject * ObjectToDrop, uint8 GripIDToDrop, FVector OptionalAngularVelocity, FVector OptionalLinearVelocity, bool bSkipNotify)
 {
 	FBPActorGripInformation * GripInfo = nullptr;
 	if (ObjectToDrop != nullptr)
@@ -1391,18 +1434,18 @@ bool UGripMotionControllerComponent::DropObjectByInterface(UObject * ObjectToDro
 
 		if (PrimComp->GetClass()->ImplementsInterface(UVRGripInterface::StaticClass()))
 		{
-			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(PrimComp), OptionalAngularVelocity, OptionalLinearVelocity);
+			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(PrimComp), OptionalAngularVelocity, OptionalLinearVelocity, bSkipNotify);
 			//return DropComponent(PrimComp, IVRGripInterface::Execute_SimulateOnDrop(PrimComp), OptionalAngularVelocity, OptionalLinearVelocity);
 		}
 		else if (Owner->GetClass()->ImplementsInterface(UVRGripInterface::StaticClass()))
 		{
-			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(Owner), OptionalAngularVelocity, OptionalLinearVelocity);
+			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(Owner), OptionalAngularVelocity, OptionalLinearVelocity, bSkipNotify);
 			//return DropComponent(PrimComp, IVRGripInterface::Execute_SimulateOnDrop(Owner), OptionalAngularVelocity, OptionalLinearVelocity);
 		}
 		else
 		{
 			// Allowing for failsafe dropping here.
-			return DropGrip_Implementation(*GripInfo, true, OptionalAngularVelocity, OptionalLinearVelocity);
+			return DropGrip_Implementation(*GripInfo, true, OptionalAngularVelocity, OptionalLinearVelocity, bSkipNotify);
 			//return DropComponent(PrimComp, true, OptionalAngularVelocity, OptionalLinearVelocity);
 		}
 	}
@@ -1415,16 +1458,16 @@ bool UGripMotionControllerComponent::DropObjectByInterface(UObject * ObjectToDro
 
 		if (root->GetClass()->ImplementsInterface(UVRGripInterface::StaticClass()))
 		{
-			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(root), OptionalAngularVelocity, OptionalLinearVelocity);
+			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(root), OptionalAngularVelocity, OptionalLinearVelocity, bSkipNotify);
 		}
 		else if (Actor->GetClass()->ImplementsInterface(UVRGripInterface::StaticClass()))
 		{
-			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(Actor), OptionalAngularVelocity, OptionalLinearVelocity);
+			return DropGrip_Implementation(*GripInfo, IVRGripInterface::Execute_SimulateOnDrop(Actor), OptionalAngularVelocity, OptionalLinearVelocity, bSkipNotify);
 		}
 		else
 		{
 			// Failsafe drop here
-			return DropGrip_Implementation(*GripInfo, true, OptionalAngularVelocity, OptionalLinearVelocity);
+			return DropGrip_Implementation(*GripInfo, true, OptionalAngularVelocity, OptionalLinearVelocity, bSkipNotify);
 		}
 	}
 
@@ -2323,9 +2366,9 @@ void UGripMotionControllerComponent::Server_NotifyDropAndSocketGrip_Implementati
 		Socket_Implementation(FoundGrip.GrippedObject, (PhysicsHandleIndex != INDEX_NONE), SocketingParent, OptionalSocketName, RelativeTransformToParent, bWeldBodies);
 	}
 
-	if (!DropAndSocketGrip_Implementation(FoundGrip, SocketingParent, OptionalSocketName, RelativeTransformToParent, bWeldBodies))
+	if (!DropAndSocketGrip_Implementation(FoundGrip, SocketingParent, OptionalSocketName, RelativeTransformToParent, bWeldBodies, true))
 	{
-		DropGrip_Implementation(FoundGrip, false);
+		DropGrip_Implementation(FoundGrip, false, FVector::ZeroVector, FVector::ZeroVector, true);
 	}
 
 }
@@ -3020,6 +3063,12 @@ bool UGripMotionControllerComponent::NotifyGrip(FBPActorGripInformation &NewGrip
 			{
 				root->SetSimulatePhysics(false);
 			}
+			// #TODO Remove the ELSE below when chaos is fixed for body welding without simulation
+			else
+			{
+				root->SetSimulatePhysics(true); // Forces it to weld children
+				root->SetSimulatePhysics(false); // Stop it
+			}
 
 			if(root->GetAttachParent())
 			{
@@ -3695,11 +3744,14 @@ void UGripMotionControllerComponent::Drop_Implementation(const FBPActorGripInfor
 				{
 					if (IsValid(LocallyGrippedObjects[i].GrippedObject) && LocallyGrippedObjects[i].GrippedObject->GetClass()->ImplementsInterface(UVRGripInterface::StaticClass()))
 					{
-						EGripInterfaceTeleportBehavior TeleportBehavior = IVRGripInterface::Execute_TeleportBehavior(LocallyGrippedObjects[i].GrippedObject);
-						if (TeleportBehavior == EGripInterfaceTeleportBehavior::DeltaTeleportation)
+						if (LocallyGrippedObjects[i].GripCollisionType != EGripCollisionType::CustomGrip && LocallyGrippedObjects[i].GripCollisionType != EGripCollisionType::EventsOnly)
 						{
-							bNeedsPhysicsTick = true;
-							break;
+							EGripInterfaceTeleportBehavior TeleportBehavior = IVRGripInterface::Execute_TeleportBehavior(LocallyGrippedObjects[i].GrippedObject);
+							if (TeleportBehavior == EGripInterfaceTeleportBehavior::DeltaTeleportation)
+							{
+								bNeedsPhysicsTick = true;
+								break;
+							}
 						}
 					}
 				}
@@ -3710,11 +3762,14 @@ void UGripMotionControllerComponent::Drop_Implementation(const FBPActorGripInfor
 					{
 						if (IsValid(GrippedObjects[i].GrippedObject) && GrippedObjects[i].GrippedObject->GetClass()->ImplementsInterface(UVRGripInterface::StaticClass()))
 						{
-							EGripInterfaceTeleportBehavior TeleportBehavior = IVRGripInterface::Execute_TeleportBehavior(GrippedObjects[i].GrippedObject);
-							if (TeleportBehavior == EGripInterfaceTeleportBehavior::DeltaTeleportation)
+							if (GrippedObjects[i].GripCollisionType != EGripCollisionType::CustomGrip && GrippedObjects[i].GripCollisionType != EGripCollisionType::EventsOnly)
 							{
-								bNeedsPhysicsTick = true;
-								break;
+								EGripInterfaceTeleportBehavior TeleportBehavior = IVRGripInterface::Execute_TeleportBehavior(GrippedObjects[i].GrippedObject);
+								if (TeleportBehavior == EGripInterfaceTeleportBehavior::DeltaTeleportation)
+								{
+									bNeedsPhysicsTick = true;
+									break;
+								}
 							}
 						}
 					}
@@ -4294,6 +4349,12 @@ bool UGripMotionControllerComponent::TeleportMoveGrip_Impl(FBPActorGripInformati
 		}
 	}
 
+	// We don't teleport these two grip types at all
+	if (Grip.GripCollisionType == EGripCollisionType::AttachmentGrip || Grip.GripCollisionType == EGripCollisionType::EventsOnly)
+	{
+		return false;
+	}
+
 	FTransform WorldTransform;
 	FTransform ParentTransform = GetPivotTransform();
 
@@ -4417,15 +4478,18 @@ bool UGripMotionControllerComponent::TeleportMoveGrip_Impl(FBPActorGripInformati
 			FTransform newTrans = Handle->COMPosition * (Handle->RootBoneRotation * physicsTrans);
 			if (pInstance && pInstance->IsValidBodyInstance())
 			{
-				//FPhysicsCommand::ExecuteWrite(ActorHandle, [&](const FPhysicsActorHandle& Actor)
-				FPhysicsCommand::ExecuteWrite(pInstance->GetPhysicsScene(), [&]()
+				if (FPhysScene* PhysicalScene = pInstance->GetPhysicsScene())
+				{
+					//FPhysicsCommand::ExecuteWrite(ActorHandle, [&](const FPhysicsActorHandle& Actor)
+					FPhysicsCommand::ExecuteWrite(PhysicalScene, [&]()
 					{
-						if (FPhysicsInterface::IsValid(ActorHandle) && FPhysicsInterface::GetCurrentScene(ActorHandle))
+						if (FPhysicsInterface::IsValid(ActorHandle))
 						{
 							FPhysicsInterface::SetKinematicTarget_AssumesLocked(ActorHandle, newTrans);
 							FPhysicsInterface::SetGlobalPose_AssumesLocked(ActorHandle, newTrans);
 						}
 					});
+				}
 			}
 		}
 	}
@@ -4473,6 +4537,54 @@ void UGripMotionControllerComponent::OnAttachmentChanged()
 	Super::OnAttachmentChanged();
 }
 
+void UGripMotionControllerComponent::OnRep_ReplicatedControllerTransform()
+{
+	//ReplicatedControllerTransform.Unpack();
+
+	if (GetNetMode() < ENetMode::NM_Client && HasTrackingParameters())
+	{
+		// Ensure that the client is sending valid boundries
+		ApplyTrackingParameters(ReplicatedControllerTransform.Position, true);
+	}
+
+	if (bSmoothReplicatedMotion)
+	{
+		if (bReppedOnce)
+		{
+			bLerpingPosition = true;
+			ControllerNetUpdateCount = 0.0f;
+			LastUpdatesRelativePosition = this->GetRelativeLocation();
+			LastUpdatesRelativeRotation = this->GetRelativeRotation();
+
+			if (bUseExponentialSmoothing)
+			{
+				FVector OldToNewVector = ReplicatedControllerTransform.Position - LastUpdatesRelativePosition;
+				float NewDistance = OldToNewVector.SizeSquared();
+
+				// Too far, snap to the new value
+				if (NewDistance >= FMath::Square(NetworkNoSmoothUpdateDistance))
+				{
+					SetRelativeLocationAndRotation(ReplicatedControllerTransform.Position, ReplicatedControllerTransform.Rotation);
+					bLerpingPosition = false;
+				}
+				// Outside of the buffer distance, snap within buffer and keep smoothing from there
+				else if (NewDistance >= FMath::Square(NetworkMaxSmoothUpdateDistance))
+				{
+					FVector Offset = (OldToNewVector.Size() - NetworkMaxSmoothUpdateDistance) * OldToNewVector.GetSafeNormal();
+					SetRelativeLocation(LastUpdatesRelativePosition + Offset);
+				}
+			}
+		}
+		else
+		{
+			SetRelativeLocationAndRotation(ReplicatedControllerTransform.Position, ReplicatedControllerTransform.Rotation);
+			bReppedOnce = true;
+		}
+	}
+	else
+		SetRelativeLocationAndRotation(ReplicatedControllerTransform.Position, ReplicatedControllerTransform.Rotation);
+}
+
 void UGripMotionControllerComponent::UpdateTracking(float DeltaTime)
 {
 	// Server/remote clients don't set the controller position in VR
@@ -4493,7 +4605,7 @@ void UGripMotionControllerComponent::UpdateTracking(float DeltaTime)
 			{
 				GripViewExtension = FSceneViewExtensions::NewExtension<FGripViewExtension>(this);
 			}
-
+			
 			float WorldToMeters = GetWorld() ? GetWorld()->GetWorldSettings()->WorldToMeters : 100.0f;
 			ETrackingStatus LastTrackingStatus = CurrentTrackingStatus;
 			const bool bNewTrackedState = GripPollControllerState(Position, Orientation, WorldToMeters);
@@ -4622,44 +4734,69 @@ void UGripMotionControllerComponent::UpdateTracking(float DeltaTime)
 			GripViewExtension.Reset();
 		}
 
-		if (bLerpingPosition)
+		// Run any networked smoothing
+		RunNetworkedSmoothing(DeltaTime);
+	}
+}
+
+void UGripMotionControllerComponent::RunNetworkedSmoothing(float DeltaTime)
+{
+	if (bLerpingPosition)
+	{
+		if (!bUseExponentialSmoothing)
 		{
 			ControllerNetUpdateCount += DeltaTime;
 			float LerpVal = FMath::Clamp(ControllerNetUpdateCount / (1.0f / ControllerNetUpdateRate), 0.0f, 1.0f);
 
 			if (LerpVal >= 1.0f)
 			{
-				SetRelativeLocationAndRotation(MotionSampleUpdateBuffer[0].Position, MotionSampleUpdateBuffer[0].Rotation);
+				SetRelativeLocationAndRotation(ReplicatedControllerTransform.Position, ReplicatedControllerTransform.Rotation);
 
-				static const auto CVarDoubleBufferTrackedDevices = IConsoleManager::Get().FindConsoleVariable(TEXT("vr.DoubleBufferReplicatedTrackedDevices"));
-				if (CVarDoubleBufferTrackedDevices->GetBool())
-				{
-					LastUpdatesRelativePosition = this->GetRelativeLocation();
-					LastUpdatesRelativeRotation = this->GetRelativeRotation();
-					ControllerNetUpdateCount = 0.0f;
-
-					// Move to next sample, we are catching up
-					MotionSampleUpdateBuffer[0] = MotionSampleUpdateBuffer[1];
-				}
-				else
-				{
-					// Stop lerping, wait for next update if it is delayed or lost then it will hitch here
-					// Actual prediction might be something to consider in the future, but rough to do in VR
-					// considering the speed and accuracy of movements
-					// would like to consider sub stepping but since there is no server rollback...not sure how useful it would be
-					// and might be perf taxing enough to not make it worth it.
-					bLerpingPosition = false;
-					ControllerNetUpdateCount = 0.0f;
-				}
+				// Stop lerping, wait for next update if it is delayed or lost then it will hitch here
+				// Actual prediction might be something to consider in the future, but rough to do in VR
+				// considering the speed and accuracy of movements
+				// would like to consider sub stepping but since there is no server rollback...not sure how useful it would be
+				// and might be perf taxing enough to not make it worth it.
+				bLerpingPosition = false;
+				ControllerNetUpdateCount = 0.0f;
 			}
 			else
 			{
 				// Removed variables to speed this up a bit
 				SetRelativeLocationAndRotation(
-					FMath::Lerp(LastUpdatesRelativePosition, (FVector)MotionSampleUpdateBuffer[0].Position, LerpVal),
-					FMath::Lerp(LastUpdatesRelativeRotation, MotionSampleUpdateBuffer[0].Rotation, LerpVal)
+					FMath::Lerp(LastUpdatesRelativePosition, (FVector)ReplicatedControllerTransform.Position, LerpVal),
+					FMath::Lerp(LastUpdatesRelativeRotation, ReplicatedControllerTransform.Rotation, LerpVal)
 				);
 			}
+		}
+		else // Exponential Smoothing
+		{
+			if (InterpolationSpeed <= 0.f)
+			{
+				SetRelativeLocationAndRotation((FVector)ReplicatedControllerTransform.Position, ReplicatedControllerTransform.Rotation);
+				bLerpingPosition = false;
+				return;
+			}
+
+			const float Alpha = FMath::Clamp(DeltaTime * InterpolationSpeed, 0.f, 1.f);
+
+			FTransform NA = FTransform(GetRelativeRotation(), GetRelativeLocation(), FVector(1.0f));
+			FTransform NB = FTransform(ReplicatedControllerTransform.Rotation, (FVector)ReplicatedControllerTransform.Position, FVector(1.0f));
+			NA.NormalizeRotation();
+			NB.NormalizeRotation();
+
+			NA.Blend(NA, NB, Alpha);
+
+			// If we are nearly equal then snap to final position
+			if (NA.EqualsNoScale(NB))
+			{
+				SetRelativeLocationAndRotation(ReplicatedControllerTransform.Position, ReplicatedControllerTransform.Rotation);
+				bLerpingPosition = false;
+			}
+			else // Else just keep going
+			{
+				SetRelativeLocationAndRotation(NA.GetTranslation(), NA.Rotator());
+			}			
 		}
 	}
 }
@@ -5142,7 +5279,10 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 								}
 								else
 								{
-									Grip->bColliding = true;
+									if (FHitResult::GetFirstBlockingHit(Hits) != nullptr)
+									{
+										Grip->bColliding = true;
+									}
 								}
 							}
 							else
@@ -5229,8 +5369,11 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 
 							Grip->bColliding = true;
 						}
-						else if (GetWorld()->ComponentSweepMulti(Hits, root, root->GetComponentLocation(), WorldTransform.GetLocation(), WorldTransform.GetRotation(), Params))
+						else if (GetWorld()->ComponentSweepMulti(Hits, root, root->GetComponentLocation(), WorldTransform.GetLocation(), WorldTransform.GetRotation(), Params) && FHitResult::GetFirstBlockingHit(Hits) != nullptr)
 						{
+							// Assume true by default, will revert if checking ignored below
+							Grip->bColliding = true;
+
 							// Check if the two components are ignoring collisions with each other
 							UCollisionIgnoreSubsystem* CollisionIgnoreSubsystem = GetWorld()->GetSubsystem<UCollisionIgnoreSubsystem>();
 
@@ -5270,7 +5413,7 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 								{
 									SetGripConstraintStiffnessAndDamping(Grip, false);
 								}
-								Grip->bColliding = true;
+								//Grip->bColliding = true;
 							}
 						}
 						else
@@ -5331,8 +5474,11 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 							Grip->bColliding = true;
 						}
 						// Check our target rotation
-						else if (GetWorld()->ComponentSweepMulti(Hits, root, BaseTransform.GetLocation(), WorldTransform.GetLocation(), WorldTransform.GetRotation(), Params))
+						else if (GetWorld()->ComponentSweepMulti(Hits, root, BaseTransform.GetLocation(), WorldTransform.GetLocation(), WorldTransform.GetRotation(), Params) && FHitResult::GetFirstBlockingHit(Hits) != nullptr)
 						{
+							// Assume true by default, will revert if checking ignored below
+							Grip->bColliding = true;
+
 							// Check if the two components are ignoring collisions with each other
 							UCollisionIgnoreSubsystem* CollisionIgnoreSubsystem = GetWorld()->GetSubsystem<UCollisionIgnoreSubsystem>();
 							if (CollisionIgnoreSubsystem->HasCollisionIgnorePairs())
@@ -5365,14 +5511,13 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 									}
 								}
 							}
-							else
-							{
-								Grip->bColliding = true;
-							}
 						}
 						// Check the other rotation
-						else if (bLerpCollisions && GetWorld()->ComponentSweepMulti(Hits, root, BaseTransform.GetLocation(), WorldTransform.GetLocation(), root->GetComponentRotation(), Params))
+						else if (bLerpCollisions && GetWorld()->ComponentSweepMulti(Hits, root, BaseTransform.GetLocation(), WorldTransform.GetLocation(), root->GetComponentRotation(), Params) && FHitResult::GetFirstBlockingHit(Hits) != nullptr)
 						{
+							// Assume true by default, will revert if checking ignored below
+							Grip->bColliding = true;
+
 							// Check if the two components are ignoring collisions with each other
 							UCollisionIgnoreSubsystem* CollisionIgnoreSubsystem = GetWorld()->GetSubsystem<UCollisionIgnoreSubsystem>();
 
@@ -5389,10 +5534,6 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 										break;
 									}
 								}
-							}
-							else
-							{
-								Grip->bColliding = true;
 							}
 						}
 						else
@@ -5436,6 +5577,7 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 									{
 										// Just multiplying to make the values easier
 										Grip->LerpSpeed *= 10.0f;
+										Grip->CurrentLerpTime = LerpSpeed;
 									}
 								}
 
@@ -5450,6 +5592,11 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 										{
 											Alpha = 1.0f;
 											Grip->CurrentLerpTime = 0.0f;
+										}
+										else
+										{
+											Grip->CurrentLerpTime = FMath::Clamp(Grip->CurrentLerpTime - DeltaTime, 0.0f, 1.0f);
+											Alpha = FMath::Clamp(DeltaTime * Grip->LerpSpeed, 0.f, 1.f);
 										}
 
 										Alpha = FMath::Clamp(DeltaTime * Grip->LerpSpeed, 0.f, 1.f);
@@ -5476,7 +5623,7 @@ void UGripMotionControllerComponent::HandleGripArray(TArray<FBPActorGripInformat
 
 									if (bDistanceBasedInterpolation)
 									{
-										if(NA.Equals(WorldTransform))
+										if(NA.Equals(WorldTransform, 0.01f))
 										{
 											Grip->CurrentLerpTime = 0.0f;
 										}
@@ -6871,7 +7018,7 @@ void UGripMotionControllerComponent::ApplyTrackingParameters(FVector& OriginalPo
 		// #TODO: This is technically unsafe, need to use a seperate value like the transforms for the render thread
 		// If I ever delete the simple char then this setup can just go away anyway though
 		// It has a data race condition right now though
-		FVector CorrectLastLocation = bIsInGameThread ? LastLocationForLateUpdate : GripRenderThreadLastLocationForLateUpdate;
+		FVector CorrectLastLocation = bIsInGameThread ? LastLocationForLateUpdate : LateUpdateParams.GripRenderThreadLastLocationForLateUpdate;
 
 		if (bOffsetByHMD)
 		{
@@ -6983,7 +7130,7 @@ bool UGripMotionControllerComponent::GripPollControllerState(FVector& Position, 
 					}
 					else
 					{
-						FinalControllerTransform = GripRenderThreadProfileTransform * FinalControllerTransform;
+						FinalControllerTransform = LateUpdateParams.GripRenderThreadProfileTransform * FinalControllerTransform;
 					}
 					
 					Orientation = FinalControllerTransform.Rotator();
@@ -7086,17 +7233,49 @@ void UGripMotionControllerComponent::FGripViewExtension::PreRenderViewFamily_Ren
 		}
 
 		// Poll state for the most recent controller transform
-		FVector Position = MotionControllerComponent->GripRenderThreadRelativeTransform.GetTranslation();
-		FRotator Orientation = MotionControllerComponent->GripRenderThreadRelativeTransform.GetRotation().Rotator();
+		FVector Position = MotionControllerComponent->LateUpdateParams.GripRenderThreadRelativeTransform.GetTranslation();
+		FRotator Orientation = MotionControllerComponent->LateUpdateParams.GripRenderThreadRelativeTransform.GetRotation().Rotator();
 
 		if (!MotionControllerComponent->GripPollControllerState(Position, Orientation, WorldToMetersScale))
 		{
 			return;
 		}
 
-		OldTransform = MotionControllerComponent->GripRenderThreadRelativeTransform;
-		NewTransform = FTransform(Orientation, Position, MotionControllerComponent->GripRenderThreadComponentScale);
-		MotionControllerComponent->GripRenderThreadRelativeTransform = NewTransform;
+		if (MotionControllerComponent->LateUpdateParams.bRenderSmoothHandTracking)
+		{
+			FTransform CalcedTransform = FTransform(Orientation, Position, MotionControllerComponent->LateUpdateParams.GripRenderThreadComponentScale);
+
+			if (MotionControllerComponent->LateUpdateParams.bRenderSmoothWithEuroLowPassFunction)
+			{
+				CalcedTransform = MotionControllerComponent->LateUpdateParams.RenderEuroSmoothingParams.RunFilterSmoothing(CalcedTransform, MotionControllerComponent->LateUpdateParams.RenderLastDeltaTime);
+				//SetRelativeTransform(RenderEuroSmoothingParams.RunFilterSmoothing(CalcedTransform, RenderLastDeltaTime));
+			}
+			else
+			{
+				if (MotionControllerComponent->LateUpdateParams.RenderSmoothingSpeed <= 0.f || MotionControllerComponent->LateUpdateParams.RenderLastSmoothRelativeTransform.Equals(FTransform::Identity))
+				{
+					//SetRelativeTransform(CalcedTransform);
+				}
+				else
+				{
+					const float Alpha = FMath::Clamp(MotionControllerComponent->LateUpdateParams.RenderLastDeltaTime * MotionControllerComponent->LateUpdateParams.RenderSmoothingSpeed, 0.f, 1.f);
+					MotionControllerComponent->LateUpdateParams.RenderLastSmoothRelativeTransform.Blend(MotionControllerComponent->LateUpdateParams.RenderLastSmoothRelativeTransform, CalcedTransform, Alpha);
+					CalcedTransform = MotionControllerComponent->LateUpdateParams.RenderLastSmoothRelativeTransform;
+					//SetRelativeTransform(LastSmoothRelativeTransform);
+				}
+			}
+
+			// Set smoothed properties
+			NewTransform = CalcedTransform;
+		}
+		else
+		{
+			NewTransform = FTransform(Orientation, Position, MotionControllerComponent->LateUpdateParams.GripRenderThreadComponentScale);
+		}
+
+		OldTransform = MotionControllerComponent->LateUpdateParams.GripRenderThreadRelativeTransform;
+		//NewTransform = FTransform(Orientation, Position, MotionControllerComponent->GripRenderThreadComponentScale);
+		MotionControllerComponent->LateUpdateParams.GripRenderThreadRelativeTransform = NewTransform;
 	} // Release lock on motion controller component
 
 	  // Tell the late update manager to apply the offset to the scene components
@@ -7499,9 +7678,9 @@ void UGripMotionControllerComponent::Server_NotifyLocalGripRemoved_Implementatio
 		}
 	}
 
-	if (!DropObjectByInterface(nullptr, FoundGrip.GripID, AngularVelocity, LinearVelocity))
+	if (!DropObjectByInterface_Implementation(nullptr, FoundGrip.GripID, AngularVelocity, LinearVelocity, true))
 	{
-		DropGrip_Implementation(FoundGrip, false, AngularVelocity, LinearVelocity);
+		DropGrip_Implementation(FoundGrip, false, AngularVelocity, LinearVelocity,true);
 	}
 }
 

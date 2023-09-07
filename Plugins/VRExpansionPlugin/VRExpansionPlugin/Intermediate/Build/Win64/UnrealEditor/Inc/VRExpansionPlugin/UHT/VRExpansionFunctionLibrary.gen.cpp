@@ -1144,13 +1144,13 @@ void EmptyLinkFunctionForGeneratedCodeVRExpansionFunctionLibrary() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_A = { "A", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRExpansionFunctionLibrary_eventEqualEqual_FBPActorGripInformation_Parms, A), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_A_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_A_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_A = { "A", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRExpansionFunctionLibrary_eventEqualEqual_FBPActorGripInformation_Parms, A), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_A_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_A_MetaData)) }; // 3975863413
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B = { "B", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRExpansionFunctionLibrary_eventEqualEqual_FBPActorGripInformation_Parms, B), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B = { "B", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRExpansionFunctionLibrary_eventEqualEqual_FBPActorGripInformation_Parms, B), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_B_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((VRExpansionFunctionLibrary_eventEqualEqual_FBPActorGripInformation_Parms*)Obj)->ReturnValue = 1;
@@ -1770,7 +1770,7 @@ void EmptyLinkFunctionForGeneratedCodeVRExpansionFunctionLibrary() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRExpansionFunctionLibrary_eventIsActiveGrip_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_Grip_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_Grip = { "Grip", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRExpansionFunctionLibrary_eventIsActiveGrip_Parms, Grip), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_Grip_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_Grip_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
 		((VRExpansionFunctionLibrary_eventIsActiveGrip_Parms*)Obj)->ReturnValue = 1;
@@ -2965,7 +2965,7 @@ void EmptyLinkFunctionForGeneratedCodeVRExpansionFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_Conv_GripPairToGripID, "Conv_GripPairToGripID" }, // 1957007371
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_Conv_GripPairToMotionController, "Conv_GripPairToMotionController" }, // 645080947
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_Conv_TransformToTransformNetQuantize, "Conv_TransformToTransformNetQuantize" }, // 2952129355
-		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation, "EqualEqual_FBPActorGripInformation" }, // 1714701627
+		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation, "EqualEqual_FBPActorGripInformation" }, // 685913541
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetFirstGameplayTagWithExactParent, "GetFirstGameplayTagWithExactParent" }, // 477395268
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetGameViewportClient, "GetGameViewportClient" }, // 2093828880
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetGripSlotInRangeByTypeName, "GetGripSlotInRangeByTypeName" }, // 2576404828
@@ -2977,7 +2977,7 @@ void EmptyLinkFunctionForGeneratedCodeVRExpansionFunctionLibrary() {}
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetIsHMDConnected, "GetIsHMDConnected" }, // 2022595325
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetIsHMDWorn, "GetIsHMDWorn" }, // 3197833271
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetPeak_PeakLowPassFilter, "GetPeak_PeakLowPassFilter" }, // 1275580687
-		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip, "IsActiveGrip" }, // 4116177700
+		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsActiveGrip, "IsActiveGrip" }, // 2641844336
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsComponentIgnoringCollision, "IsComponentIgnoringCollision" }, // 544668226
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsInVREditorPreview, "IsInVREditorPreview" }, // 1468967928
 		{ &Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsInVREditorPreviewOrGame, "IsInVREditorPreviewOrGame" }, // 3684476151
@@ -3047,9 +3047,9 @@ void EmptyLinkFunctionForGeneratedCodeVRExpansionFunctionLibrary() {}
 		{ EBPHMDWornState_StaticEnum, TEXT("EBPHMDWornState"), &Z_Registration_Info_UEnum_EBPHMDWornState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4128420562U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVRExpansionFunctionLibrary, UVRExpansionFunctionLibrary::StaticClass, TEXT("UVRExpansionFunctionLibrary"), &Z_Registration_Info_UClass_UVRExpansionFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRExpansionFunctionLibrary), 4096540361U) },
+		{ Z_Construct_UClass_UVRExpansionFunctionLibrary, UVRExpansionFunctionLibrary::StaticClass, TEXT("UVRExpansionFunctionLibrary"), &Z_Registration_Info_UClass_UVRExpansionFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRExpansionFunctionLibrary), 1884075042U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_1270726904(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_1217017976(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRExpansionFunctionLibrary_h_Statics::EnumInfo));

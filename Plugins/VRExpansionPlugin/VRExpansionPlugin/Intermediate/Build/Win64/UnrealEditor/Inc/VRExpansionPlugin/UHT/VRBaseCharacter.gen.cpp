@@ -700,9 +700,10 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 	{
 		P_GET_STRUCT(FVector,Z_Param_NewLoc);
 		P_GET_UBOOL(Z_Param_bTeleport);
+		P_GET_UBOOL(Z_Param_bSetCapsuleLocation);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FVector*)Z_Param__Result=P_THIS->SetActorLocationVR(Z_Param_NewLoc,Z_Param_bTeleport);
+		*(FVector*)Z_Param__Result=P_THIS->SetActorLocationVR(Z_Param_NewLoc,Z_Param_bTeleport,Z_Param_bSetCapsuleLocation);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AVRBaseCharacter::execSetActorLocationAndRotationVR)
@@ -712,9 +713,10 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		P_GET_UBOOL(Z_Param_bUseYawOnly);
 		P_GET_UBOOL(Z_Param_bAccountForHMDRotation);
 		P_GET_UBOOL(Z_Param_bTeleport);
+		P_GET_UBOOL(Z_Param_bRotateAroundCapsule);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FVector*)Z_Param__Result=P_THIS->SetActorLocationAndRotationVR(Z_Param_NewLoc,Z_Param_NewRot,Z_Param_bUseYawOnly,Z_Param_bAccountForHMDRotation,Z_Param_bTeleport);
+		*(FVector*)Z_Param__Result=P_THIS->SetActorLocationAndRotationVR(Z_Param_NewLoc,Z_Param_NewRot,Z_Param_bUseYawOnly,Z_Param_bAccountForHMDRotation,Z_Param_bTeleport,Z_Param_bRotateAroundCapsule);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AVRBaseCharacter::execSetActorRotationVR)
@@ -722,18 +724,20 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		P_GET_STRUCT(FRotator,Z_Param_NewRot);
 		P_GET_UBOOL(Z_Param_bUseYawOnly);
 		P_GET_UBOOL(Z_Param_bAccountForHMDRotation);
+		P_GET_UBOOL(Z_Param_bRotateAroundCapsule);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FVector*)Z_Param__Result=P_THIS->SetActorRotationVR(Z_Param_NewRot,Z_Param_bUseYawOnly,Z_Param_bAccountForHMDRotation);
+		*(FVector*)Z_Param__Result=P_THIS->SetActorRotationVR(Z_Param_NewRot,Z_Param_bUseYawOnly,Z_Param_bAccountForHMDRotation,Z_Param_bRotateAroundCapsule);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AVRBaseCharacter::execAddActorWorldRotationVR)
 	{
 		P_GET_STRUCT(FRotator,Z_Param_DeltaRot);
 		P_GET_UBOOL(Z_Param_bUseYawOnly);
+		P_GET_UBOOL(Z_Param_bRotateAroundCapsule);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FVector*)Z_Param__Result=P_THIS->AddActorWorldRotationVR(Z_Param_DeltaRot,Z_Param_bUseYawOnly);
+		*(FVector*)Z_Param__Result=P_THIS->AddActorWorldRotationVR(Z_Param_DeltaRot,Z_Param_bUseYawOnly,Z_Param_bRotateAroundCapsule);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AVRBaseCharacter::execServer_SetSeatedMode)
@@ -1129,11 +1133,14 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		{
 			FRotator DeltaRot;
 			bool bUseYawOnly;
+			bool bRotateAroundCapsule;
 			FVector ReturnValue;
 		};
 		static const UECodeGen_Private::FStructPropertyParams NewProp_DeltaRot;
 		static void NewProp_bUseYawOnly_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bUseYawOnly;
+		static void NewProp_bRotateAroundCapsule_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bRotateAroundCapsule;
 		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -1147,19 +1154,26 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		((VRBaseCharacter_eventAddActorWorldRotationVR_Parms*)Obj)->bUseYawOnly = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bUseYawOnly = { "bUseYawOnly", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventAddActorWorldRotationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bUseYawOnly_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bRotateAroundCapsule_SetBit(void* Obj)
+	{
+		((VRBaseCharacter_eventAddActorWorldRotationVR_Parms*)Obj)->bRotateAroundCapsule = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bRotateAroundCapsule = { "bRotateAroundCapsule", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventAddActorWorldRotationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bRotateAroundCapsule_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRBaseCharacter_eventAddActorWorldRotationVR_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_DeltaRot,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bUseYawOnly,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_bRotateAroundCapsule,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BaseVRCharacter|VRLocations" },
-		{ "Comment", "// Adds a rotation delta taking into account the HMD as a pivot point (also moves the actor), returns final location difference\n" },
+		{ "Comment", "// Adds a rotation delta taking into account the HMD as a pivot point (also moves the actor), returns final location difference\n// If bRotateAroundCapsule is true then it rotates around the offset capsule, otherwise it rotates around the camera\n" },
+		{ "CPP_Default_bRotateAroundCapsule", "true" },
 		{ "CPP_Default_bUseYawOnly", "true" },
 		{ "ModuleRelativePath", "Public/VRBaseCharacter.h" },
-		{ "ToolTip", "Adds a rotation delta taking into account the HMD as a pivot point (also moves the actor), returns final location difference" },
+		{ "ToolTip", "Adds a rotation delta taking into account the HMD as a pivot point (also moves the actor), returns final location difference\nIf bRotateAroundCapsule is true then it rotates around the offset capsule, otherwise it rotates around the camera" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AVRBaseCharacter, nullptr, "AddActorWorldRotationVR", nullptr, nullptr, sizeof(Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::VRBaseCharacter_eventAddActorWorldRotationVR_Parms), Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR_Statics::Function_MetaDataParams)) };
@@ -2248,6 +2262,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 			bool bUseYawOnly;
 			bool bAccountForHMDRotation;
 			bool bTeleport;
+			bool bRotateAroundCapsule;
 			FVector ReturnValue;
 		};
 		static const UECodeGen_Private::FStructPropertyParams NewProp_NewLoc;
@@ -2258,6 +2273,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bAccountForHMDRotation;
 		static void NewProp_bTeleport_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bTeleport;
+		static void NewProp_bRotateAroundCapsule_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bRotateAroundCapsule;
 		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -2282,6 +2299,11 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		((VRBaseCharacter_eventSetActorLocationAndRotationVR_Parms*)Obj)->bTeleport = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bTeleport = { "bTeleport", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventSetActorLocationAndRotationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bTeleport_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bRotateAroundCapsule_SetBit(void* Obj)
+	{
+		((VRBaseCharacter_eventSetActorLocationAndRotationVR_Parms*)Obj)->bRotateAroundCapsule = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bRotateAroundCapsule = { "bRotateAroundCapsule", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventSetActorLocationAndRotationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bRotateAroundCapsule_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRBaseCharacter_eventSetActorLocationAndRotationVR_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_NewLoc,
@@ -2289,17 +2311,19 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bUseYawOnly,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bAccountForHMDRotation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bTeleport,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_bRotateAroundCapsule,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BaseVRCharacter|VRLocations" },
-		{ "Comment", "// Sets the actors rotation and location taking into account the HMD as a pivot point (also moves the actor), returns the location difference from the rotation\n" },
+		{ "Comment", "// Sets the actors rotation and location taking into account the HMD as a pivot point (also moves the actor), returns the location difference from the rotation\n// If bRotateAroundCapsule is true then it rotates around the offset capsule, otherwise it rotates around the camera\n" },
 		{ "CPP_Default_bAccountForHMDRotation", "true" },
+		{ "CPP_Default_bRotateAroundCapsule", "true" },
 		{ "CPP_Default_bTeleport", "false" },
 		{ "CPP_Default_bUseYawOnly", "true" },
 		{ "ModuleRelativePath", "Public/VRBaseCharacter.h" },
-		{ "ToolTip", "Sets the actors rotation and location taking into account the HMD as a pivot point (also moves the actor), returns the location difference from the rotation" },
+		{ "ToolTip", "Sets the actors rotation and location taking into account the HMD as a pivot point (also moves the actor), returns the location difference from the rotation\nIf bRotateAroundCapsule is true then it rotates around the offset capsule, otherwise it rotates around the camera" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AVRBaseCharacter, nullptr, "SetActorLocationAndRotationVR", nullptr, nullptr, sizeof(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::VRBaseCharacter_eventSetActorLocationAndRotationVR_Parms), Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR_Statics::Function_MetaDataParams)) };
@@ -2318,11 +2342,14 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		{
 			FVector NewLoc;
 			bool bTeleport;
+			bool bSetCapsuleLocation;
 			FVector ReturnValue;
 		};
 		static const UECodeGen_Private::FStructPropertyParams NewProp_NewLoc;
 		static void NewProp_bTeleport_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bTeleport;
+		static void NewProp_bSetCapsuleLocation_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bSetCapsuleLocation;
 		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -2336,18 +2363,25 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		((VRBaseCharacter_eventSetActorLocationVR_Parms*)Obj)->bTeleport = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bTeleport = { "bTeleport", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventSetActorLocationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bTeleport_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bSetCapsuleLocation_SetBit(void* Obj)
+	{
+		((VRBaseCharacter_eventSetActorLocationVR_Parms*)Obj)->bSetCapsuleLocation = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bSetCapsuleLocation = { "bSetCapsuleLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventSetActorLocationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bSetCapsuleLocation_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRBaseCharacter_eventSetActorLocationVR_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_NewLoc,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bTeleport,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_bSetCapsuleLocation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BaseVRCharacter|VRLocations" },
-		{ "Comment", "// Sets the actors location taking into account the HMD as a pivot point, returns the location difference\n" },
+		{ "Comment", "// Sets the actors location taking into account the HMD as a pivot point, returns the location difference\n// If SetCapsuleLocation is true then it offsets the capsule to the location, otherwise it will move the Camera itself to the location\n" },
+		{ "CPP_Default_bSetCapsuleLocation", "true" },
 		{ "ModuleRelativePath", "Public/VRBaseCharacter.h" },
-		{ "ToolTip", "Sets the actors location taking into account the HMD as a pivot point, returns the location difference" },
+		{ "ToolTip", "Sets the actors location taking into account the HMD as a pivot point, returns the location difference\nIf SetCapsuleLocation is true then it offsets the capsule to the location, otherwise it will move the Camera itself to the location" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AVRBaseCharacter, nullptr, "SetActorLocationVR", nullptr, nullptr, sizeof(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::VRBaseCharacter_eventSetActorLocationVR_Parms), Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR_Statics::Function_MetaDataParams)) };
@@ -2367,6 +2401,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 			FRotator NewRot;
 			bool bUseYawOnly;
 			bool bAccountForHMDRotation;
+			bool bRotateAroundCapsule;
 			FVector ReturnValue;
 		};
 		static const UECodeGen_Private::FStructPropertyParams NewProp_NewRot;
@@ -2374,6 +2409,8 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bUseYawOnly;
 		static void NewProp_bAccountForHMDRotation_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bAccountForHMDRotation;
+		static void NewProp_bRotateAroundCapsule_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bRotateAroundCapsule;
 		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -2392,21 +2429,28 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		((VRBaseCharacter_eventSetActorRotationVR_Parms*)Obj)->bAccountForHMDRotation = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bAccountForHMDRotation = { "bAccountForHMDRotation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventSetActorRotationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bAccountForHMDRotation_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bRotateAroundCapsule_SetBit(void* Obj)
+	{
+		((VRBaseCharacter_eventSetActorRotationVR_Parms*)Obj)->bRotateAroundCapsule = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bRotateAroundCapsule = { "bRotateAroundCapsule", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacter_eventSetActorRotationVR_Parms), &Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bRotateAroundCapsule_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRBaseCharacter_eventSetActorRotationVR_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_NewRot,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bUseYawOnly,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bAccountForHMDRotation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_bRotateAroundCapsule,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BaseVRCharacter|VRLocations" },
-		{ "Comment", "// Sets the actors rotation taking into account the HMD as a pivot point (also moves the actor), returns the location difference\n// bAccountForHMDRotation sets the rot to have the HMD face the given rot, if it is false it ignores the HMD rotation\n" },
+		{ "Comment", "// Sets the actors rotation taking into account the HMD as a pivot point (also moves the actor), returns the location difference\n// bAccountForHMDRotation sets the rot to have the HMD face the given rot, if it is false it ignores the HMD rotation\n// If bRotateAroundCapsule is true then it rotates around the offset capsule, otherwise it rotates around the camera\n" },
 		{ "CPP_Default_bAccountForHMDRotation", "true" },
+		{ "CPP_Default_bRotateAroundCapsule", "true" },
 		{ "CPP_Default_bUseYawOnly", "true" },
 		{ "ModuleRelativePath", "Public/VRBaseCharacter.h" },
-		{ "ToolTip", "Sets the actors rotation taking into account the HMD as a pivot point (also moves the actor), returns the location difference\nbAccountForHMDRotation sets the rot to have the HMD face the given rot, if it is false it ignores the HMD rotation" },
+		{ "ToolTip", "Sets the actors rotation taking into account the HMD as a pivot point (also moves the actor), returns the location difference\nbAccountForHMDRotation sets the rot to have the HMD face the given rot, if it is false it ignores the HMD rotation\nIf bRotateAroundCapsule is true then it rotates around the offset capsule, otherwise it rotates around the camera" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AVRBaseCharacter, nullptr, "SetActorRotationVR", nullptr, nullptr, sizeof(Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::VRBaseCharacter_eventSetActorRotationVR_Parms), Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR_Statics::Function_MetaDataParams)) };
@@ -2701,7 +2745,7 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		(UObject* (*)())Z_Construct_UPackage__Script_VRExpansionPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AVRBaseCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR, "AddActorWorldRotationVR" }, // 1566011947
+		{ &Z_Construct_UFunction_AVRBaseCharacter_AddActorWorldRotationVR, "AddActorWorldRotationVR" }, // 3380076070
 		{ &Z_Construct_UFunction_AVRBaseCharacter_ExtendedSimpleMoveToLocation, "ExtendedSimpleMoveToLocation" }, // 3918668878
 		{ &Z_Construct_UFunction_AVRBaseCharacter_GetCurrentNavigationPathPoints, "GetCurrentNavigationPathPoints" }, // 427825363
 		{ &Z_Construct_UFunction_AVRBaseCharacter_GetMoveStatus, "GetMoveStatus" }, // 2369432995
@@ -2729,9 +2773,9 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		{ &Z_Construct_UFunction_AVRBaseCharacter_Server_SendTransformLeftController, "Server_SendTransformLeftController" }, // 272966884
 		{ &Z_Construct_UFunction_AVRBaseCharacter_Server_SendTransformRightController, "Server_SendTransformRightController" }, // 2719459211
 		{ &Z_Construct_UFunction_AVRBaseCharacter_Server_SetSeatedMode, "Server_SetSeatedMode" }, // 3850328136
-		{ &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR, "SetActorLocationAndRotationVR" }, // 1436189743
-		{ &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR, "SetActorLocationVR" }, // 1620658960
-		{ &Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR, "SetActorRotationVR" }, // 3035828792
+		{ &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationAndRotationVR, "SetActorLocationAndRotationVR" }, // 3164614577
+		{ &Z_Construct_UFunction_AVRBaseCharacter_SetActorLocationVR, "SetActorLocationVR" }, // 2477277371
+		{ &Z_Construct_UFunction_AVRBaseCharacter_SetActorRotationVR, "SetActorRotationVR" }, // 156700831
 		{ &Z_Construct_UFunction_AVRBaseCharacter_SetCharacterHalfHeightVR, "SetCharacterHalfHeightVR" }, // 1655708336
 		{ &Z_Construct_UFunction_AVRBaseCharacter_SetCharacterSizeVR, "SetCharacterSizeVR" }, // 259582846
 		{ &Z_Construct_UFunction_AVRBaseCharacter_StopNavigationMovement, "StopNavigationMovement" }, // 2029313875
@@ -3002,9 +3046,9 @@ template<> VREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FVRReplicatedCapsul
 		{ FVRReplicatedCapsuleHeight::StaticStruct, Z_Construct_UScriptStruct_FVRReplicatedCapsuleHeight_Statics::NewStructOps, TEXT("VRReplicatedCapsuleHeight"), &Z_Registration_Info_UScriptStruct_VRReplicatedCapsuleHeight, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FVRReplicatedCapsuleHeight), 556415864U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AVRBaseCharacter, AVRBaseCharacter::StaticClass, TEXT("AVRBaseCharacter"), &Z_Registration_Info_UClass_AVRBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AVRBaseCharacter), 3719116007U) },
+		{ Z_Construct_UClass_AVRBaseCharacter, AVRBaseCharacter::StaticClass, TEXT("AVRBaseCharacter"), &Z_Registration_Info_UClass_AVRBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AVRBaseCharacter), 4238238674U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_703617968(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_865254879(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacter_h_Statics::ScriptStructInfo),
 		nullptr, 0);

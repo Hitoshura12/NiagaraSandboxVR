@@ -17,6 +17,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_24_SPARSE_DATA
 #define FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_24_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetAngularLimits); \
+	DECLARE_FUNCTION(execGetLinearLimits); \
 	DECLARE_FUNCTION(execSetAngularOffset); \
 	DECLARE_FUNCTION(execGetAngularOffset); \
 	DECLARE_FUNCTION(execGetCurrentLinearDistance); \
@@ -28,6 +30,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetAngularLimits); \
+	DECLARE_FUNCTION(execGetLinearLimits); \
 	DECLARE_FUNCTION(execSetAngularOffset); \
 	DECLARE_FUNCTION(execGetAngularOffset); \
 	DECLARE_FUNCTION(execGetCurrentLinearDistance); \

@@ -1,8 +1,8 @@
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp"
+C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp
 /I .
 /I ..\Plugins\Runtime\OpenXR\Source\OpenXRHMD\Private
 /I ThirdParty\OpenXR\include
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Source\OpenXRExpansionPlugin\Private"
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Source\OpenXRExpansionPlugin\Private
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -13,14 +13,14 @@
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
 /I Runtime\CoreUObject\Public
 /I Runtime\Net\Common\Public
+/I Runtime\ApplicationCore\Public
+/I Runtime\RHI\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\UHT
 /I Runtime\CoreOnline\Public
-/I Runtime\ApplicationCore\Public
-/I Runtime\RHI\Public
 /I Runtime\ImageCore\Public
 /I Runtime\Json\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\JsonUtilities\UHT
@@ -272,6 +272,7 @@
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
+/I Runtime\InputDevice\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality\UHT
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh\UHT
@@ -280,24 +281,24 @@
 /I Runtime\AnimGraphRuntime\Public
 /I ..\Plugins\Runtime\OpenXR\Source
 /I ..\Plugins\Runtime\OpenXR\Source\OpenXRHMD\Public
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Inc\OpenXRExpansionPlugin\UHT"
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Source"
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Source\OpenXRExpansionPlugin\Public"
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Inc\OpenXRExpansionPlugin\UHT
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Source
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Source\OpenXRExpansionPlugin\Public
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
 /I ThirdParty\OpenXR\include
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Definitions.OpenXRExpansionPlugin.h"
-/Yu"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp.obj"
-/sourceDependencies "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp.dep.json"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/FI"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Definitions.OpenXRExpansionPlugin.h"
+/Yu"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/Fp"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
+/Fo"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp.obj"
+/sourceDependencies C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi

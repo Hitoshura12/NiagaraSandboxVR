@@ -18,6 +18,24 @@ void EmptyLinkFunctionForGeneratedCodeVREPhysicsConstraintComponent() {}
 	VREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UVREPhysicsConstraintComponent();
 	VREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UVREPhysicsConstraintComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UVREPhysicsConstraintComponent::execGetAngularLimits)
+	{
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_Swing1Limit);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_Swing2Limit);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_TwistLimit);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->GetAngularLimits(Z_Param_Out_Swing1Limit,Z_Param_Out_Swing2Limit,Z_Param_Out_TwistLimit);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVREPhysicsConstraintComponent::execGetLinearLimits)
+	{
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_LinearLimit);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->GetLinearLimits(Z_Param_Out_LinearLimit);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UVREPhysicsConstraintComponent::execSetAngularOffset)
 	{
 		P_GET_STRUCT(FRotator,Z_Param_NewAngularOffset);
@@ -79,15 +97,58 @@ void EmptyLinkFunctionForGeneratedCodeVREPhysicsConstraintComponent() {}
 	{
 		UClass* Class = UVREPhysicsConstraintComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetAngularLimits", &UVREPhysicsConstraintComponent::execGetAngularLimits },
 			{ "GetAngularOffset", &UVREPhysicsConstraintComponent::execGetAngularOffset },
 			{ "GetConstraintReferenceFrame", &UVREPhysicsConstraintComponent::execGetConstraintReferenceFrame },
 			{ "GetCurrentLinearDistance", &UVREPhysicsConstraintComponent::execGetCurrentLinearDistance },
 			{ "GetGlobalPose", &UVREPhysicsConstraintComponent::execGetGlobalPose },
+			{ "GetLinearLimits", &UVREPhysicsConstraintComponent::execGetLinearLimits },
 			{ "GetLocalPose", &UVREPhysicsConstraintComponent::execGetLocalPose },
 			{ "SetAngularOffset", &UVREPhysicsConstraintComponent::execSetAngularOffset },
 			{ "SetConstraintToForceBased", &UVREPhysicsConstraintComponent::execSetConstraintToForceBased },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics
+	{
+		struct VREPhysicsConstraintComponent_eventGetAngularLimits_Parms
+		{
+			float Swing1Limit;
+			float Swing2Limit;
+			float TwistLimit;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Swing1Limit;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Swing2Limit;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_TwistLimit;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::NewProp_Swing1Limit = { "Swing1Limit", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VREPhysicsConstraintComponent_eventGetAngularLimits_Parms, Swing1Limit), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::NewProp_Swing2Limit = { "Swing2Limit", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VREPhysicsConstraintComponent_eventGetAngularLimits_Parms, Swing2Limit), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::NewProp_TwistLimit = { "TwistLimit", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VREPhysicsConstraintComponent_eventGetAngularLimits_Parms, TwistLimit), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::NewProp_Swing1Limit,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::NewProp_Swing2Limit,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::NewProp_TwistLimit,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRE Physics Constraint Component" },
+		{ "ModuleRelativePath", "Public/Misc/VREPhysicsConstraintComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVREPhysicsConstraintComponent, nullptr, "GetAngularLimits", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::VREPhysicsConstraintComponent_eventGetAngularLimits_Parms), Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularOffset_Statics
 	{
@@ -237,6 +298,39 @@ void EmptyLinkFunctionForGeneratedCodeVREPhysicsConstraintComponent() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics
+	{
+		struct VREPhysicsConstraintComponent_eventGetLinearLimits_Parms
+		{
+			float LinearLimit;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_LinearLimit;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::NewProp_LinearLimit = { "LinearLimit", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VREPhysicsConstraintComponent_eventGetLinearLimits_Parms, LinearLimit), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::NewProp_LinearLimit,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRE Physics Constraint Component" },
+		{ "ModuleRelativePath", "Public/Misc/VREPhysicsConstraintComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVREPhysicsConstraintComponent, nullptr, "GetLinearLimits", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::VREPhysicsConstraintComponent_eventGetLinearLimits_Parms), Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLocalPose_Statics
 	{
 		struct VREPhysicsConstraintComponent_eventGetLocalPose_Parms
@@ -367,10 +461,12 @@ void EmptyLinkFunctionForGeneratedCodeVREPhysicsConstraintComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_VRExpansionPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UVREPhysicsConstraintComponent_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularLimits, "GetAngularLimits" }, // 2750101911
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetAngularOffset, "GetAngularOffset" }, // 2882522022
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetConstraintReferenceFrame, "GetConstraintReferenceFrame" }, // 3649823537
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetCurrentLinearDistance, "GetCurrentLinearDistance" }, // 930375432
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetGlobalPose, "GetGlobalPose" }, // 3111318270
+		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLinearLimits, "GetLinearLimits" }, // 2557737701
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_GetLocalPose, "GetLocalPose" }, // 2940260673
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_SetAngularOffset, "SetAngularOffset" }, // 153529864
 		{ &Z_Construct_UFunction_UVREPhysicsConstraintComponent_SetConstraintToForceBased, "SetConstraintToForceBased" }, // 1536149595
@@ -424,9 +520,9 @@ void EmptyLinkFunctionForGeneratedCodeVREPhysicsConstraintComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVREPhysicsConstraintComponent, UVREPhysicsConstraintComponent::StaticClass, TEXT("UVREPhysicsConstraintComponent"), &Z_Registration_Info_UClass_UVREPhysicsConstraintComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVREPhysicsConstraintComponent), 1631618907U) },
+		{ Z_Construct_UClass_UVREPhysicsConstraintComponent, UVREPhysicsConstraintComponent::StaticClass, TEXT("UVREPhysicsConstraintComponent"), &Z_Registration_Info_UClass_UVREPhysicsConstraintComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVREPhysicsConstraintComponent), 776485023U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_3328841916(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_1573840986(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Misc_VREPhysicsConstraintComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

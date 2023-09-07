@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-OpenXRExpansionPlugin.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp.obj"
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Default.rc2.res"
-/OUT:"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\UnrealEditor-OpenXRExpansionPlugin.lib"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Module.OpenXRExpansionPlugin.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\Default.rc2.res"
+/OUT:"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenXRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenXRExpansionPlugin\UnrealEditor-OpenXRExpansionPlugin.lib"

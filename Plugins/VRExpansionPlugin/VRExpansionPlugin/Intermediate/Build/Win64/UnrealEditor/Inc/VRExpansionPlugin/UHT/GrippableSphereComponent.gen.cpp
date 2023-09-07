@@ -246,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeGrippableSphereComponent() {}
 		{ "ToolTip", "Called when a object is gripped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnGripped = { "OnGripped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnGripped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnGripped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnGripped_MetaData)) }; // 751591806
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnGripped = { "OnGripped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnGripped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnGripped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnGripped_MetaData)) }; // 3502606547
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeGrippableSphereComponent() {}
 		{ "ToolTip", "Called when a object is dropped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped = { "OnDropped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnDropped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped_MetaData)) }; // 1793324043
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped = { "OnDropped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnDropped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnDropped_MetaData)) }; // 3758456689
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -264,7 +264,7 @@ void EmptyLinkFunctionForGeneratedCodeGrippableSphereComponent() {}
 		{ "ToolTip", "Called when an object we hold is secondary gripped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded = { "OnSecondaryGripAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnSecondaryGripAdded), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData)) }; // 751591806
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded = { "OnSecondaryGripAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnSecondaryGripAdded), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripAdded_MetaData)) }; // 3502606547
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -273,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeGrippableSphereComponent() {}
 		{ "ToolTip", "Called when an object we hold is secondary dropped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved = { "OnSecondaryGripRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnSecondaryGripRemoved), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData)) }; // 751591806
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved = { "OnSecondaryGripRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UGrippableSphereComponent, OnSecondaryGripRemoved), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_OnSecondaryGripRemoved_MetaData)) }; // 3502606547
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_GameplayTags_MetaData[] = {
 		{ "Category", "GameplayTags" },
@@ -330,7 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeGrippableSphereComponent() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrippableSphereComponent_Statics::NewProp_VRGripInterfaceSettings,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UGrippableSphereComponent_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UVRGripInterface_NoRegister, (int32)VTABLE_OFFSET(UGrippableSphereComponent, IVRGripInterface), false },  // 2675698684
+			{ Z_Construct_UClass_UVRGripInterface_NoRegister, (int32)VTABLE_OFFSET(UGrippableSphereComponent, IVRGripInterface), false },  // 3570845334
 			{ Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister, (int32)VTABLE_OFFSET(UGrippableSphereComponent, IGameplayTagAssetInterface), false },  // 3654419898
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGrippableSphereComponent_Statics::StaticCppClassTypeInfo = {
@@ -389,9 +389,9 @@ void EmptyLinkFunctionForGeneratedCodeGrippableSphereComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Grippables_GrippableSphereComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGrippableSphereComponent, UGrippableSphereComponent::StaticClass, TEXT("UGrippableSphereComponent"), &Z_Registration_Info_UClass_UGrippableSphereComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGrippableSphereComponent), 1520680916U) },
+		{ Z_Construct_UClass_UGrippableSphereComponent, UGrippableSphereComponent::StaticClass, TEXT("UGrippableSphereComponent"), &Z_Registration_Info_UClass_UGrippableSphereComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGrippableSphereComponent), 633327991U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Grippables_GrippableSphereComponent_h_1916129069(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Grippables_GrippableSphereComponent_h_7869330(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Grippables_GrippableSphereComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Grippables_GrippableSphereComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

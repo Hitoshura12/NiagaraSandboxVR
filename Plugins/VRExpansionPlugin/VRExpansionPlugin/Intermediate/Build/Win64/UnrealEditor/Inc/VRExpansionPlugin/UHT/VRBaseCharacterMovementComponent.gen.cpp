@@ -129,9 +129,10 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		P_GET_ENUM(EVRMoveActionVelocityRetention,Z_Param_VelocityRetention);
 		P_GET_UBOOL(Z_Param_bFlagGripTeleport);
 		P_GET_UBOOL(Z_Param_bFlagCharacterTeleport);
+		P_GET_UBOOL(Z_Param_bRotateAroundCapsule);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->PerformMoveAction_SetRotation(Z_Param_NewYaw,EVRMoveActionVelocityRetention(Z_Param_VelocityRetention),Z_Param_bFlagGripTeleport,Z_Param_bFlagCharacterTeleport);
+		P_THIS->PerformMoveAction_SetRotation(Z_Param_NewYaw,EVRMoveActionVelocityRetention(Z_Param_VelocityRetention),Z_Param_bFlagGripTeleport,Z_Param_bFlagCharacterTeleport,Z_Param_bRotateAroundCapsule);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UVRBaseCharacterMovementComponent::execPerformMoveAction_SnapTurn)
@@ -140,9 +141,10 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		P_GET_ENUM(EVRMoveActionVelocityRetention,Z_Param_VelocityRetention);
 		P_GET_UBOOL(Z_Param_bFlagGripTeleport);
 		P_GET_UBOOL(Z_Param_bFlagCharacterTeleport);
+		P_GET_UBOOL(Z_Param_bRotateAroundCapsule);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->PerformMoveAction_SnapTurn(Z_Param_SnapTurnDeltaYaw,EVRMoveActionVelocityRetention(Z_Param_VelocityRetention),Z_Param_bFlagGripTeleport,Z_Param_bFlagCharacterTeleport);
+		P_THIS->PerformMoveAction_SnapTurn(Z_Param_SnapTurnDeltaYaw,EVRMoveActionVelocityRetention(Z_Param_VelocityRetention),Z_Param_bFlagGripTeleport,Z_Param_bFlagCharacterTeleport,Z_Param_bRotateAroundCapsule);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UVRBaseCharacterMovementComponent::execPerformMoveAction_SetTrackingPaused)
@@ -387,6 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 			EVRMoveActionVelocityRetention VelocityRetention;
 			bool bFlagGripTeleport;
 			bool bFlagCharacterTeleport;
+			bool bRotateAroundCapsule;
 		};
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_NewYaw;
 		static const UECodeGen_Private::FBytePropertyParams NewProp_VelocityRetention_Underlying;
@@ -395,6 +398,8 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bFlagGripTeleport;
 		static void NewProp_bFlagCharacterTeleport_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bFlagCharacterTeleport;
+		static void NewProp_bRotateAroundCapsule_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bRotateAroundCapsule;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -414,22 +419,29 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		((VRBaseCharacterMovementComponent_eventPerformMoveAction_SetRotation_Parms*)Obj)->bFlagCharacterTeleport = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bFlagCharacterTeleport = { "bFlagCharacterTeleport", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacterMovementComponent_eventPerformMoveAction_SetRotation_Parms), &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bFlagCharacterTeleport_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bRotateAroundCapsule_SetBit(void* Obj)
+	{
+		((VRBaseCharacterMovementComponent_eventPerformMoveAction_SetRotation_Parms*)Obj)->bRotateAroundCapsule = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bRotateAroundCapsule = { "bRotateAroundCapsule", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacterMovementComponent_eventPerformMoveAction_SetRotation_Parms), &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bRotateAroundCapsule_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_NewYaw,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_VelocityRetention_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_VelocityRetention,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bFlagGripTeleport,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bFlagCharacterTeleport,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::NewProp_bRotateAroundCapsule,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "VRMovement" },
-		{ "Comment", "// Perform a rotation set in line with the move actions system\n// This node specifically sets the FACING direction to a value, where your HMD is pointed\n" },
+		{ "Comment", "// Perform a rotation set in line with the move actions system\n// This node specifically sets the FACING direction to a value, where your HMD is pointed\n// If bRotateAroundCapsule is true then the rotation is around the offset capsule (neck) rather than the actual camera location\n" },
 		{ "CPP_Default_bFlagCharacterTeleport", "false" },
 		{ "CPP_Default_bFlagGripTeleport", "false" },
+		{ "CPP_Default_bRotateAroundCapsule", "true" },
 		{ "CPP_Default_VelocityRetention", "VRMOVEACTION_Velocity_None" },
 		{ "ModuleRelativePath", "Public/VRBaseCharacterMovementComponent.h" },
-		{ "ToolTip", "Perform a rotation set in line with the move actions system\nThis node specifically sets the FACING direction to a value, where your HMD is pointed" },
+		{ "ToolTip", "Perform a rotation set in line with the move actions system\nThis node specifically sets the FACING direction to a value, where your HMD is pointed\nIf bRotateAroundCapsule is true then the rotation is around the offset capsule (neck) rather than the actual camera location" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVRBaseCharacterMovementComponent, nullptr, "PerformMoveAction_SetRotation", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::VRBaseCharacterMovementComponent_eventPerformMoveAction_SetRotation_Parms), Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation_Statics::Function_MetaDataParams)) };
@@ -490,6 +502,7 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 			EVRMoveActionVelocityRetention VelocityRetention;
 			bool bFlagGripTeleport;
 			bool bFlagCharacterTeleport;
+			bool bRotateAroundCapsule;
 		};
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_SnapTurnDeltaYaw;
 		static const UECodeGen_Private::FBytePropertyParams NewProp_VelocityRetention_Underlying;
@@ -498,6 +511,8 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bFlagGripTeleport;
 		static void NewProp_bFlagCharacterTeleport_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bFlagCharacterTeleport;
+		static void NewProp_bRotateAroundCapsule_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bRotateAroundCapsule;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -517,22 +532,29 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		((VRBaseCharacterMovementComponent_eventPerformMoveAction_SnapTurn_Parms*)Obj)->bFlagCharacterTeleport = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bFlagCharacterTeleport = { "bFlagCharacterTeleport", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacterMovementComponent_eventPerformMoveAction_SnapTurn_Parms), &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bFlagCharacterTeleport_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bRotateAroundCapsule_SetBit(void* Obj)
+	{
+		((VRBaseCharacterMovementComponent_eventPerformMoveAction_SnapTurn_Parms*)Obj)->bRotateAroundCapsule = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bRotateAroundCapsule = { "bRotateAroundCapsule", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(VRBaseCharacterMovementComponent_eventPerformMoveAction_SnapTurn_Parms), &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bRotateAroundCapsule_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_SnapTurnDeltaYaw,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_VelocityRetention_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_VelocityRetention,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bFlagGripTeleport,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bFlagCharacterTeleport,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::NewProp_bRotateAroundCapsule,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::Function_MetaDataParams[] = {
 		{ "Category", "VRMovement" },
-		{ "Comment", "// Perform a snap turn in line with the move action system\n" },
+		{ "Comment", "// Perform a snap turn in line with the move action system\n// If bRotateAroundCapsule is true then the rotation is around the offset capsule (neck) rather than the actual camera location\n" },
 		{ "CPP_Default_bFlagCharacterTeleport", "false" },
 		{ "CPP_Default_bFlagGripTeleport", "false" },
+		{ "CPP_Default_bRotateAroundCapsule", "true" },
 		{ "CPP_Default_VelocityRetention", "VRMOVEACTION_Velocity_None" },
 		{ "ModuleRelativePath", "Public/VRBaseCharacterMovementComponent.h" },
-		{ "ToolTip", "Perform a snap turn in line with the move action system" },
+		{ "ToolTip", "Perform a snap turn in line with the move action system\nIf bRotateAroundCapsule is true then the rotation is around the offset capsule (neck) rather than the actual camera location" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVRBaseCharacterMovementComponent, nullptr, "PerformMoveAction_SnapTurn", nullptr, nullptr, sizeof(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::VRBaseCharacterMovementComponent_eventPerformMoveAction_SnapTurn_Parms), Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn_Statics::Function_MetaDataParams)) };
@@ -858,9 +880,9 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_GetCustomInputVector, "GetCustomInputVector" }, // 944566100
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_GetReplicatedMovementMode, "GetReplicatedMovementMode" }, // 2840342830
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_Custom, "PerformMoveAction_Custom" }, // 3881545337
-		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation, "PerformMoveAction_SetRotation" }, // 2201036295
+		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetRotation, "PerformMoveAction_SetRotation" }, // 471415294
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SetTrackingPaused, "PerformMoveAction_SetTrackingPaused" }, // 2759515908
-		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn, "PerformMoveAction_SnapTurn" }, // 3868461376
+		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_SnapTurn, "PerformMoveAction_SnapTurn" }, // 3568391843
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_StopAllMovement, "PerformMoveAction_StopAllMovement" }, // 4160453811
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_PerformMoveAction_Teleport, "PerformMoveAction_Teleport" }, // 1866604988
 		{ &Z_Construct_UFunction_UVRBaseCharacterMovementComponent_RewindVRMovement, "RewindVRMovement" }, // 3613275874
@@ -1172,9 +1194,9 @@ void EmptyLinkFunctionForGeneratedCodeVRBaseCharacterMovementComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacterMovementComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVRBaseCharacterMovementComponent, UVRBaseCharacterMovementComponent::StaticClass, TEXT("UVRBaseCharacterMovementComponent"), &Z_Registration_Info_UClass_UVRBaseCharacterMovementComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRBaseCharacterMovementComponent), 1582684783U) },
+		{ Z_Construct_UClass_UVRBaseCharacterMovementComponent, UVRBaseCharacterMovementComponent::StaticClass, TEXT("UVRBaseCharacterMovementComponent"), &Z_Registration_Info_UClass_UVRBaseCharacterMovementComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRBaseCharacterMovementComponent), 746646220U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacterMovementComponent_h_3759502851(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacterMovementComponent_h_3447516310(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacterMovementComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRBaseCharacterMovementComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

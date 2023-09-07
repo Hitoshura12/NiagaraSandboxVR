@@ -11,8 +11,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 // Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	HEADMOUNTEDDISPLAY_API UScriptStruct* Z_Construct_UScriptStruct_FXRMotionControllerData();
+	INPUTCORE_API UEnum* Z_Construct_UEnum_InputCore_EControllerHand();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRExpansionFunctionLibrary();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRExpansionFunctionLibrary_NoRegister();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRHandPoseComponent_NoRegister();
@@ -53,6 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		{ "EBPOpenXRControllerDeviceType::DT_MicrosoftMotionController", (int64)EBPOpenXRControllerDeviceType::DT_MicrosoftMotionController },
 		{ "EBPOpenXRControllerDeviceType::DT_MicrosoftXboxController", (int64)EBPOpenXRControllerDeviceType::DT_MicrosoftXboxController },
 		{ "EBPOpenXRControllerDeviceType::DT_PicoNeo3Controller", (int64)EBPOpenXRControllerDeviceType::DT_PicoNeo3Controller },
+		{ "EBPOpenXRControllerDeviceType::DT_WMRController", (int64)EBPOpenXRControllerDeviceType::DT_WMRController },
 		{ "EBPOpenXRControllerDeviceType::DT_UnknownController", (int64)EBPOpenXRControllerDeviceType::DT_UnknownController },
 	};
 #if WITH_METADATA
@@ -72,6 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		{ "DT_ValveIndexController.Name", "EBPOpenXRControllerDeviceType::DT_ValveIndexController" },
 		{ "DT_ViveController.Name", "EBPOpenXRControllerDeviceType::DT_ViveController" },
 		{ "DT_ViveProController.Name", "EBPOpenXRControllerDeviceType::DT_ViveProController" },
+		{ "DT_WMRController.Name", "EBPOpenXRControllerDeviceType::DT_WMRController" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/OpenXRExpansionFunctionLibrary.h" },
 		{ "ToolTip", "This needs to be updated as the original gets changed, that or hope they make the original blueprint accessible." },
@@ -97,6 +101,13 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		}
 		return Z_Registration_Info_UEnum_EBPOpenXRControllerDeviceType.InnerSingleton;
 	}
+	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execDrawDebugHandGestures)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UOpenXRExpansionFunctionLibrary::DrawDebugHandGestures();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execGetXRMotionControllerType)
 	{
 		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_TrackingSystemName);
@@ -117,6 +128,20 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		UOpenXRExpansionFunctionLibrary::GetMockUpControllerData(Z_Param_Out_MotionControllerData,Z_Param_Out_SkeletalMappingData,Z_Param_bOpenHand);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execGetOpenXRFingerCurlValuesForHand)
+	{
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+		P_GET_ENUM(EControllerHand,Z_Param_TargetHand);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_ThumbCurl);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_IndexCurl);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_MiddleCurl);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_RingCurl);
+		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_PinkyCurl);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UOpenXRExpansionFunctionLibrary::GetOpenXRFingerCurlValuesForHand(Z_Param_WorldContextObject,EControllerHand(Z_Param_TargetHand),Z_Param_Out_ThumbCurl,Z_Param_Out_IndexCurl,Z_Param_Out_MiddleCurl,Z_Param_Out_RingCurl,Z_Param_Out_PinkyCurl);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execGetOpenXRHandPose)
 	{
 		P_GET_STRUCT_REF(FBPOpenXRActionSkeletalData,Z_Param_Out_HandPoseContainer);
@@ -127,15 +152,70 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		*(bool*)Z_Param__Result=UOpenXRExpansionFunctionLibrary::GetOpenXRHandPose(Z_Param_Out_HandPoseContainer,Z_Param_HandPoseComponent,Z_Param_bGetMockUpPose);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execIsHandInSight)
+	{
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+		P_GET_ENUM(EControllerHand,Z_Param_TargetHand);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UOpenXRExpansionFunctionLibrary::IsHandInSight(Z_Param_WorldContextObject,EControllerHand(Z_Param_TargetHand));
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execIsControllerInSight)
+	{
+		P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+		P_GET_ENUM(EControllerHand,Z_Param_TargetHand);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UOpenXRExpansionFunctionLibrary::IsControllerInSight(Z_Param_WorldContextObject,EControllerHand(Z_Param_TargetHand));
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UOpenXRExpansionFunctionLibrary::execIsCurrentlyHandTracking)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UOpenXRExpansionFunctionLibrary::IsCurrentlyHandTracking();
+		P_NATIVE_END;
+	}
 	void UOpenXRExpansionFunctionLibrary::StaticRegisterNativesUOpenXRExpansionFunctionLibrary()
 	{
 		UClass* Class = UOpenXRExpansionFunctionLibrary::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "DrawDebugHandGestures", &UOpenXRExpansionFunctionLibrary::execDrawDebugHandGestures },
 			{ "GetMockUpControllerData", &UOpenXRExpansionFunctionLibrary::execGetMockUpControllerData },
+			{ "GetOpenXRFingerCurlValuesForHand", &UOpenXRExpansionFunctionLibrary::execGetOpenXRFingerCurlValuesForHand },
 			{ "GetOpenXRHandPose", &UOpenXRExpansionFunctionLibrary::execGetOpenXRHandPose },
 			{ "GetXRMotionControllerType", &UOpenXRExpansionFunctionLibrary::execGetXRMotionControllerType },
+			{ "IsControllerInSight", &UOpenXRExpansionFunctionLibrary::execIsControllerInSight },
+			{ "IsCurrentlyHandTracking", &UOpenXRExpansionFunctionLibrary::execIsCurrentlyHandTracking },
+			{ "IsHandInSight", &UOpenXRExpansionFunctionLibrary::execIsHandInSight },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRExpansionFunctions|OpenXR|Debug" },
+		{ "Comment", "// Enable/disable hand gesture debug drawing\n" },
+		{ "ModuleRelativePath", "Public/OpenXRExpansionFunctionLibrary.h" },
+		{ "ToolTip", "Enable/disable hand gesture debug drawing" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, nullptr, "DrawDebugHandGestures", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetMockUpControllerData_Statics
 	{
@@ -182,6 +262,78 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetMockUpControllerData_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics
+	{
+		struct OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms
+		{
+			UObject* WorldContextObject;
+			EControllerHand TargetHand;
+			float ThumbCurl;
+			float IndexCurl;
+			float MiddleCurl;
+			float RingCurl;
+			float PinkyCurl;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_TargetHand_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_TargetHand;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ThumbCurl;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_IndexCurl;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_MiddleCurl;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_RingCurl;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_PinkyCurl;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_TargetHand_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_TargetHand = { "TargetHand", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, TargetHand), Z_Construct_UEnum_InputCore_EControllerHand, METADATA_PARAMS(nullptr, 0) }; // 2206298931
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_ThumbCurl = { "ThumbCurl", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, ThumbCurl), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_IndexCurl = { "IndexCurl", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, IndexCurl), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_MiddleCurl = { "MiddleCurl", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, MiddleCurl), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_RingCurl = { "RingCurl", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, RingCurl), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_PinkyCurl = { "PinkyCurl", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms, PinkyCurl), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms), &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_WorldContextObject,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_TargetHand_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_TargetHand,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_ThumbCurl,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_IndexCurl,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_MiddleCurl,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_RingCurl,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_PinkyCurl,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRExpansionFunctions|OpenXR" },
+		{ "Comment", "// Get the estimated curl values from hand tracking\n// Will return true if it was able to get the curls, false if it could not (hand tracking not enabled or no data for the tracked index)\n" },
+		{ "ModuleRelativePath", "Public/OpenXRExpansionFunctionLibrary.h" },
+		{ "ToolTip", "Get the estimated curl values from hand tracking\nWill return true if it was able to get the curls, false if it could not (hand tracking not enabled or no data for the tracked index)" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, nullptr, "GetOpenXRFingerCurlValuesForHand", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::OpenXRExpansionFunctionLibrary_eventGetOpenXRFingerCurlValuesForHand_Parms), Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -271,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 	};
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::NewProp_TrackingSystemName = { "TrackingSystemName", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetXRMotionControllerType_Parms, TrackingSystemName), METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::NewProp_DeviceType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetXRMotionControllerType_Parms, DeviceType), Z_Construct_UEnum_OpenXRExpansionPlugin_EBPOpenXRControllerDeviceType, METADATA_PARAMS(nullptr, 0) }; // 1811226028
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetXRMotionControllerType_Parms, DeviceType), Z_Construct_UEnum_OpenXRExpansionPlugin_EBPOpenXRControllerDeviceType, METADATA_PARAMS(nullptr, 0) }; // 3054267713
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventGetXRMotionControllerType_Parms, Result), Z_Construct_UEnum_OpenXRExpansionPlugin_EBPXRResultSwitch, METADATA_PARAMS(nullptr, 0) }; // 290278352
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType_Statics::PropPointers[] = {
@@ -301,6 +453,142 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics
+	{
+		struct OpenXRExpansionFunctionLibrary_eventIsControllerInSight_Parms
+		{
+			UObject* WorldContextObject;
+			EControllerHand TargetHand;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_TargetHand_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_TargetHand;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventIsControllerInSight_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_TargetHand_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_TargetHand = { "TargetHand", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventIsControllerInSight_Parms, TargetHand), Z_Construct_UEnum_InputCore_EControllerHand, METADATA_PARAMS(nullptr, 0) }; // 2206298931
+	void Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OpenXRExpansionFunctionLibrary_eventIsControllerInSight_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OpenXRExpansionFunctionLibrary_eventIsControllerInSight_Parms), &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_WorldContextObject,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_TargetHand_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_TargetHand,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRExpansionFunctions|OpenXR" },
+		{ "ModuleRelativePath", "Public/OpenXRExpansionFunctionLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, nullptr, "IsControllerInSight", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::OpenXRExpansionFunctionLibrary_eventIsControllerInSight_Parms), Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics
+	{
+		struct OpenXRExpansionFunctionLibrary_eventIsCurrentlyHandTracking_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OpenXRExpansionFunctionLibrary_eventIsCurrentlyHandTracking_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OpenXRExpansionFunctionLibrary_eventIsCurrentlyHandTracking_Parms), &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRExpansionFunctions|OpenXR" },
+		{ "ModuleRelativePath", "Public/OpenXRExpansionFunctionLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, nullptr, "IsCurrentlyHandTracking", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::OpenXRExpansionFunctionLibrary_eventIsCurrentlyHandTracking_Parms), Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics
+	{
+		struct OpenXRExpansionFunctionLibrary_eventIsHandInSight_Parms
+		{
+			UObject* WorldContextObject;
+			EControllerHand TargetHand;
+			bool ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_TargetHand_Underlying;
+		static const UECodeGen_Private::FEnumPropertyParams NewProp_TargetHand;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventIsHandInSight_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_TargetHand_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_TargetHand = { "TargetHand", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRExpansionFunctionLibrary_eventIsHandInSight_Parms, TargetHand), Z_Construct_UEnum_InputCore_EControllerHand, METADATA_PARAMS(nullptr, 0) }; // 2206298931
+	void Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((OpenXRExpansionFunctionLibrary_eventIsHandInSight_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OpenXRExpansionFunctionLibrary_eventIsHandInSight_Parms), &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_WorldContextObject,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_TargetHand_Underlying,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_TargetHand,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::Function_MetaDataParams[] = {
+		{ "Category", "VRExpansionFunctions|OpenXR" },
+		{ "ModuleRelativePath", "Public/OpenXRExpansionFunctionLibrary.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, nullptr, "IsHandInSight", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::OpenXRExpansionFunctionLibrary_eventIsHandInSight_Parms), Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOpenXRExpansionFunctionLibrary);
 	UClass* Z_Construct_UClass_UOpenXRExpansionFunctionLibrary_NoRegister()
 	{
@@ -321,9 +609,14 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UOpenXRExpansionFunctionLibrary_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_DrawDebugHandGestures, "DrawDebugHandGestures" }, // 1690405497
 		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetMockUpControllerData, "GetMockUpControllerData" }, // 2076831960
+		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRFingerCurlValuesForHand, "GetOpenXRFingerCurlValuesForHand" }, // 2792833928
 		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetOpenXRHandPose, "GetOpenXRHandPose" }, // 4256261711
-		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType, "GetXRMotionControllerType" }, // 2129262541
+		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_GetXRMotionControllerType, "GetXRMotionControllerType" }, // 239485887
+		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsControllerInSight, "IsControllerInSight" }, // 3791279193
+		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsCurrentlyHandTracking, "IsCurrentlyHandTracking" }, // 805491665
+		{ &Z_Construct_UFunction_UOpenXRExpansionFunctionLibrary_IsHandInSight, "IsHandInSight" }, // 2335519493
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenXRExpansionFunctionLibrary_Statics::Class_MetaDataParams[] = {
@@ -366,19 +659,19 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionFunctionLibrary() {}
 		return UOpenXRExpansionFunctionLibrary::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UOpenXRExpansionFunctionLibrary);
-	struct Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::EnumInfo[] = {
-		{ EBPOpenXRControllerDeviceType_StaticEnum, TEXT("EBPOpenXRControllerDeviceType"), &Z_Registration_Info_UEnum_EBPOpenXRControllerDeviceType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1811226028U) },
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::EnumInfo[] = {
+		{ EBPOpenXRControllerDeviceType_StaticEnum, TEXT("EBPOpenXRControllerDeviceType"), &Z_Registration_Info_UEnum_EBPOpenXRControllerDeviceType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3054267713U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, UOpenXRExpansionFunctionLibrary::StaticClass, TEXT("UOpenXRExpansionFunctionLibrary"), &Z_Registration_Info_UClass_UOpenXRExpansionFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOpenXRExpansionFunctionLibrary), 3883255256U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UOpenXRExpansionFunctionLibrary, UOpenXRExpansionFunctionLibrary::StaticClass, TEXT("UOpenXRExpansionFunctionLibrary"), &Z_Registration_Info_UClass_UOpenXRExpansionFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOpenXRExpansionFunctionLibrary), 2266366975U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_2650022915(TEXT("/Script/OpenXRExpansionPlugin"),
-		Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_4274207672(TEXT("/Script/OpenXRExpansionPlugin"),
+		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRExpansionFunctionLibrary_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

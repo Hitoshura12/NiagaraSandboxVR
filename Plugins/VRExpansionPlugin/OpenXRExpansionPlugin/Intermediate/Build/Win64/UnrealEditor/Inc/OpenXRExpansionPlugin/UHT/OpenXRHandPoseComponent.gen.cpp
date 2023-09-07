@@ -13,27 +13,19 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOpenXRHandPoseComponent() {}
 // Cross Module References
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTransform();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
-	ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FAnimInstanceProxy();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRAnimInstance();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRAnimInstance_NoRegister();
-	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRGestureDatabase();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRGestureDatabase_NoRegister();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRHandPoseComponent();
 	OPENXREXPANSIONPLUGIN_API UClass* Z_Construct_UClass_UOpenXRHandPoseComponent_NoRegister();
 	OPENXREXPANSIONPLUGIN_API UEnum* Z_Construct_UEnum_OpenXRExpansionPlugin_EVRSkeletalHandIndex();
-	OPENXREXPANSIONPLUGIN_API UEnum* Z_Construct_UEnum_OpenXRExpansionPlugin_EXRHandJointType();
-	OPENXREXPANSIONPLUGIN_API UFunction* Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature();
-	OPENXREXPANSIONPLUGIN_API UFunction* Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature();
 	OPENXREXPANSIONPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FBPOpenXRActionSkeletalData();
 	OPENXREXPANSIONPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FBPOpenXRSkeletalMappingData();
 	OPENXREXPANSIONPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FBPXRSkeletalRepContainer();
 	OPENXREXPANSIONPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FOpenXRAnimInstanceProxy();
-	OPENXREXPANSIONPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FOpenXRGesture();
-	OPENXREXPANSIONPLUGIN_API UScriptStruct* Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition();
 	UPackage* Z_Construct_UPackage__Script_OpenXRExpansionPlugin();
 // End Cross Module References
 	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_BPXRSkeletalRepContainer;
@@ -165,383 +157,6 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FBPXRSkeletalRe
 		}
 		return Z_Registration_Info_UScriptStruct_BPXRSkeletalRepContainer.InnerSingleton;
 	}
-	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition;
-class UScriptStruct* FOpenXRGestureFingerPosition::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition, Z_Construct_UPackage__Script_OpenXRExpansionPlugin(), TEXT("OpenXRGestureFingerPosition"));
-	}
-	return Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition.OuterSingleton;
-}
-template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGestureFingerPosition>()
-{
-	return FOpenXRGestureFingerPosition::StaticStruct();
-}
-	struct Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
-#endif
-		static void* NewStructOps();
-		static const UECodeGen_Private::FBytePropertyParams NewProp_IndexType_Underlying;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_IndexType_MetaData[];
-#endif
-		static const UECodeGen_Private::FEnumPropertyParams NewProp_IndexType;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Value_MetaData[];
-#endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_Value;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Threshold_MetaData[];
-#endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_Threshold;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const UECodeGen_Private::FStructParams ReturnStructParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Category", "VRGestures" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	void* Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOpenXRGestureFingerPosition>();
-	}
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType_MetaData[] = {
-		{ "Category", "VRGesture" },
-		{ "Comment", "// The Finger index, not editable\n" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "The Finger index, not editable" },
-	};
-#endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType = { "IndexType", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FOpenXRGestureFingerPosition, IndexType), Z_Construct_UEnum_OpenXRExpansionPlugin_EXRHandJointType, METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType_MetaData)) }; // 796399456
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Value_MetaData[] = {
-		{ "Category", "VRGesture" },
-		{ "Comment", "// The locational value of this element 0.f - 1.f\n" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "The locational value of this element 0.f - 1.f" },
-	};
-#endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FOpenXRGestureFingerPosition, Value), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Value_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Value_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Threshold_MetaData[] = {
-		{ "Category", "VRGesture" },
-		{ "ClampMax", "100.0" },
-		{ "ClampMin", "0.0" },
-		{ "Comment", "// The threshold within which this finger value will be detected as matching (1.0 would be always matching, IE: finger doesn't count)\n" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "The threshold within which this finger value will be detected as matching (1.0 would be always matching, IE: finger doesn't count)" },
-		{ "UIMax", "100.0" },
-		{ "UIMin", "0.0" },
-	};
-#endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Threshold = { "Threshold", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FOpenXRGestureFingerPosition, Threshold), METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Threshold_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Threshold_MetaData)) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType_Underlying,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_IndexType,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Value,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewProp_Threshold,
-	};
-	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::ReturnStructParams = {
-		(UObject* (*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin,
-		nullptr,
-		&NewStructOps,
-		"OpenXRGestureFingerPosition",
-		sizeof(FOpenXRGestureFingerPosition),
-		alignof(FOpenXRGestureFingerPosition),
-		Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::PropPointers,
-		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::PropPointers),
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::Struct_MetaDataParams))
-	};
-	UScriptStruct* Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition()
-	{
-		if (!Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition.InnerSingleton)
-		{
-			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition.InnerSingleton, Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::ReturnStructParams);
-		}
-		return Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition.InnerSingleton;
-	}
-	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_OpenXRGesture;
-class UScriptStruct* FOpenXRGesture::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_OpenXRGesture.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_OpenXRGesture.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOpenXRGesture, Z_Construct_UPackage__Script_OpenXRExpansionPlugin(), TEXT("OpenXRGesture"));
-	}
-	return Z_Registration_Info_UScriptStruct_OpenXRGesture.OuterSingleton;
-}
-template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>()
-{
-	return FOpenXRGesture::StaticStruct();
-}
-	struct Z_Construct_UScriptStruct_FOpenXRGesture_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
-#endif
-		static void* NewStructOps();
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[];
-#endif
-		static const UECodeGen_Private::FNamePropertyParams NewProp_Name;
-		static const UECodeGen_Private::FStructPropertyParams NewProp_FingerValues_Inner;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_FingerValues_MetaData[];
-#endif
-		static const UECodeGen_Private::FArrayPropertyParams NewProp_FingerValues;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const UECodeGen_Private::FStructParams ReturnStructParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGesture_Statics::Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Category", "VRGestures" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	void* Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOpenXRGesture>();
-	}
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_Name_MetaData[] = {
-		{ "Category", "VRGesture" },
-		{ "Comment", "// Name of the recorded gesture\n" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "Name of the recorded gesture" },
-	};
-#endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FOpenXRGesture, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_Name_MetaData)) };
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues_Inner = { "FingerValues", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition, METADATA_PARAMS(nullptr, 0) }; // 2064208691
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues_MetaData[] = {
-		{ "Category", "VRGesture" },
-		{ "Comment", "// Samples in the recorded gesture\n" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "Samples in the recorded gesture" },
-	};
-#endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues = { "FingerValues", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FOpenXRGesture, FingerValues), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues_MetaData)) }; // 2064208691
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOpenXRGesture_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_Name,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues_Inner,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewProp_FingerValues,
-	};
-	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOpenXRGesture_Statics::ReturnStructParams = {
-		(UObject* (*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin,
-		nullptr,
-		&NewStructOps,
-		"OpenXRGesture",
-		sizeof(FOpenXRGesture),
-		alignof(FOpenXRGesture),
-		Z_Construct_UScriptStruct_FOpenXRGesture_Statics::PropPointers,
-		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::PropPointers),
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000201),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOpenXRGesture_Statics::Struct_MetaDataParams))
-	};
-	UScriptStruct* Z_Construct_UScriptStruct_FOpenXRGesture()
-	{
-		if (!Z_Registration_Info_UScriptStruct_OpenXRGesture.InnerSingleton)
-		{
-			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_OpenXRGesture.InnerSingleton, Z_Construct_UScriptStruct_FOpenXRGesture_Statics::ReturnStructParams);
-		}
-		return Z_Registration_Info_UScriptStruct_OpenXRGesture.InnerSingleton;
-	}
-	void UOpenXRGestureDatabase::StaticRegisterNativesUOpenXRGestureDatabase()
-	{
-	}
-	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOpenXRGestureDatabase);
-	UClass* Z_Construct_UClass_UOpenXRGestureDatabase_NoRegister()
-	{
-		return UOpenXRGestureDatabase::StaticClass();
-	}
-	struct Z_Construct_UClass_UOpenXRGestureDatabase_Statics
-	{
-		static UObject* (*const DependentSingletons[])();
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_Gestures_Inner;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Gestures_MetaData[];
-#endif
-		static const UECodeGen_Private::FArrayPropertyParams NewProp_Gestures;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
-		static const UECodeGen_Private::FClassParams ClassParams;
-	};
-	UObject* (*const Z_Construct_UClass_UOpenXRGestureDatabase_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UDataAsset,
-		(UObject* (*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenXRGestureDatabase_Statics::Class_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Category", "VRGestures" },
-		{ "Comment", "/**\n* Items Database DataAsset, here we can save all of our game items\n*/" },
-		{ "IncludePath", "OpenXRHandPoseComponent.h" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "Items Database DataAsset, here we can save all of our game items" },
-	};
-#endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures_Inner = { "Gestures", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, Z_Construct_UScriptStruct_FOpenXRGesture, METADATA_PARAMS(nullptr, 0) }; // 2649084780
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures_MetaData[] = {
-		{ "Category", "VRGestures" },
-		{ "Comment", "// Gestures in this database\n" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-		{ "ToolTip", "Gestures in this database" },
-	};
-#endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures = { "Gestures", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOpenXRGestureDatabase, Gestures), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures_MetaData)) }; // 2649084780
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOpenXRGestureDatabase_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures_Inner,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRGestureDatabase_Statics::NewProp_Gestures,
-	};
-	const FCppClassTypeInfoStatic Z_Construct_UClass_UOpenXRGestureDatabase_Statics::StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<UOpenXRGestureDatabase>::IsAbstract,
-	};
-	const UECodeGen_Private::FClassParams Z_Construct_UClass_UOpenXRGestureDatabase_Statics::ClassParams = {
-		&UOpenXRGestureDatabase::StaticClass,
-		nullptr,
-		&StaticCppClassTypeInfo,
-		DependentSingletons,
-		nullptr,
-		Z_Construct_UClass_UOpenXRGestureDatabase_Statics::PropPointers,
-		nullptr,
-		UE_ARRAY_COUNT(DependentSingletons),
-		0,
-		UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRGestureDatabase_Statics::PropPointers),
-		0,
-		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UOpenXRGestureDatabase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRGestureDatabase_Statics::Class_MetaDataParams))
-	};
-	UClass* Z_Construct_UClass_UOpenXRGestureDatabase()
-	{
-		if (!Z_Registration_Info_UClass_UOpenXRGestureDatabase.OuterSingleton)
-		{
-			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOpenXRGestureDatabase.OuterSingleton, Z_Construct_UClass_UOpenXRGestureDatabase_Statics::ClassParams);
-		}
-		return Z_Registration_Info_UClass_UOpenXRGestureDatabase.OuterSingleton;
-	}
-	template<> OPENXREXPANSIONPLUGIN_API UClass* StaticClass<UOpenXRGestureDatabase>()
-	{
-		return UOpenXRGestureDatabase::StaticClass();
-	}
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UOpenXRGestureDatabase);
-	UOpenXRGestureDatabase::~UOpenXRGestureDatabase() {}
-	struct Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics
-	{
-		struct _Script_OpenXRExpansionPlugin_eventOpenXRGestureDetected_Parms
-		{
-			FName GestureDetected;
-			int32 GestureIndex;
-			EVRSkeletalHandIndex ActionHandType;
-		};
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_GestureDetected_MetaData[];
-#endif
-		static const UECodeGen_Private::FNamePropertyParams NewProp_GestureDetected;
-		static const UECodeGen_Private::FIntPropertyParams NewProp_GestureIndex;
-		static const UECodeGen_Private::FBytePropertyParams NewProp_ActionHandType_Underlying;
-		static const UECodeGen_Private::FEnumPropertyParams NewProp_ActionHandType;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureDetected_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureDetected = { "GestureDetected", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OpenXRExpansionPlugin_eventOpenXRGestureDetected_Parms, GestureDetected), METADATA_PARAMS(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureDetected_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureDetected_MetaData)) };
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureIndex = { "GestureIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OpenXRExpansionPlugin_eventOpenXRGestureDetected_Parms, GestureIndex), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_ActionHandType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_ActionHandType = { "ActionHandType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OpenXRExpansionPlugin_eventOpenXRGestureDetected_Parms, ActionHandType), Z_Construct_UEnum_OpenXRExpansionPlugin_EVRSkeletalHandIndex, METADATA_PARAMS(nullptr, 0) }; // 1054813515
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureDetected,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_GestureIndex,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_ActionHandType_Underlying,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::NewProp_ActionHandType,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin, nullptr, "OpenXRGestureDetected__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::_Script_OpenXRExpansionPlugin_eventOpenXRGestureDetected_Parms), Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics
-	{
-		struct _Script_OpenXRExpansionPlugin_eventOpenXRGestureEnded_Parms
-		{
-			FName GestureEnded;
-			int32 GestureIndex;
-			EVRSkeletalHandIndex ActionHandType;
-		};
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_GestureEnded_MetaData[];
-#endif
-		static const UECodeGen_Private::FNamePropertyParams NewProp_GestureEnded;
-		static const UECodeGen_Private::FIntPropertyParams NewProp_GestureIndex;
-		static const UECodeGen_Private::FBytePropertyParams NewProp_ActionHandType_Underlying;
-		static const UECodeGen_Private::FEnumPropertyParams NewProp_ActionHandType;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureEnded_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureEnded = { "GestureEnded", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OpenXRExpansionPlugin_eventOpenXRGestureEnded_Parms, GestureEnded), METADATA_PARAMS(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureEnded_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureEnded_MetaData)) };
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureIndex = { "GestureIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OpenXRExpansionPlugin_eventOpenXRGestureEnded_Parms, GestureIndex), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_ActionHandType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_ActionHandType = { "ActionHandType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_OpenXRExpansionPlugin_eventOpenXRGestureEnded_Parms, ActionHandType), Z_Construct_UEnum_OpenXRExpansionPlugin_EVRSkeletalHandIndex, METADATA_PARAMS(nullptr, 0) }; // 1054813515
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureEnded,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_GestureIndex,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_ActionHandType_Underlying,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::NewProp_ActionHandType,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin, nullptr, "OpenXRGestureEnded__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::_Script_OpenXRExpansionPlugin_eventOpenXRGestureEnded_Parms), Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	DEFINE_FUNCTION(UOpenXRHandPoseComponent::execOnRep_SkeletalTransformRight)
 	{
 		P_FINISH;
@@ -569,24 +184,6 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 		P_THIS->Server_SendSkeletalTransforms_Implementation(Z_Param_SkeletalInfo);
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(UOpenXRHandPoseComponent::execK2_DetectCurrentPose)
-	{
-		P_GET_STRUCT_REF(FBPOpenXRActionSkeletalData,Z_Param_Out_SkeletalAction);
-		P_GET_STRUCT_REF(FOpenXRGesture,Z_Param_Out_GestureOut);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->K2_DetectCurrentPose(Z_Param_Out_SkeletalAction,Z_Param_Out_GestureOut);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UOpenXRHandPoseComponent::execSaveCurrentPose)
-	{
-		P_GET_PROPERTY(FNameProperty,Z_Param_RecordingName);
-		P_GET_ENUM(EVRSkeletalHandIndex,Z_Param_HandToSave);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->SaveCurrentPose(Z_Param_RecordingName,EVRSkeletalHandIndex(Z_Param_HandToSave));
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(UOpenXRHandPoseComponent::execSetDetectGestures)
 	{
 		P_GET_UBOOL(Z_Param_bNewDetectGestures);
@@ -610,61 +207,12 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 	{
 		UClass* Class = UOpenXRHandPoseComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "K2_DetectCurrentPose", &UOpenXRHandPoseComponent::execK2_DetectCurrentPose },
 			{ "OnRep_SkeletalTransformLeft", &UOpenXRHandPoseComponent::execOnRep_SkeletalTransformLeft },
 			{ "OnRep_SkeletalTransformRight", &UOpenXRHandPoseComponent::execOnRep_SkeletalTransformRight },
-			{ "SaveCurrentPose", &UOpenXRHandPoseComponent::execSaveCurrentPose },
 			{ "Server_SendSkeletalTransforms", &UOpenXRHandPoseComponent::execServer_SendSkeletalTransforms },
 			{ "SetDetectGestures", &UOpenXRHandPoseComponent::execSetDetectGestures },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics
-	{
-		struct OpenXRHandPoseComponent_eventK2_DetectCurrentPose_Parms
-		{
-			FBPOpenXRActionSkeletalData SkeletalAction;
-			FOpenXRGesture GestureOut;
-			bool ReturnValue;
-		};
-		static const UECodeGen_Private::FStructPropertyParams NewProp_SkeletalAction;
-		static const UECodeGen_Private::FStructPropertyParams NewProp_GestureOut;
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_SkeletalAction = { "SkeletalAction", nullptr, (EPropertyFlags)0x0010000008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRHandPoseComponent_eventK2_DetectCurrentPose_Parms, SkeletalAction), Z_Construct_UScriptStruct_FBPOpenXRActionSkeletalData, METADATA_PARAMS(nullptr, 0) }; // 2860319167
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_GestureOut = { "GestureOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRHandPoseComponent_eventK2_DetectCurrentPose_Parms, GestureOut), Z_Construct_UScriptStruct_FOpenXRGesture, METADATA_PARAMS(nullptr, 0) }; // 2649084780
-	void Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((OpenXRHandPoseComponent_eventK2_DetectCurrentPose_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OpenXRHandPoseComponent_eventK2_DetectCurrentPose_Parms), &Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_SkeletalAction,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_GestureOut,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::Function_MetaDataParams[] = {
-		{ "Category", "VRGestures" },
-		{ "DisplayName", "DetectCurrentPose" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRHandPoseComponent, nullptr, "K2_DetectCurrentPose", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::OpenXRHandPoseComponent_eventK2_DetectCurrentPose_Parms), Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UOpenXRHandPoseComponent_OnRep_SkeletalTransformLeft_Statics
 	{
@@ -707,56 +255,6 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRHandPoseComponent_OnRep_SkeletalTransformRight_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics
-	{
-		struct OpenXRHandPoseComponent_eventSaveCurrentPose_Parms
-		{
-			FName RecordingName;
-			EVRSkeletalHandIndex HandToSave;
-			bool ReturnValue;
-		};
-		static const UECodeGen_Private::FNamePropertyParams NewProp_RecordingName;
-		static const UECodeGen_Private::FBytePropertyParams NewProp_HandToSave_Underlying;
-		static const UECodeGen_Private::FEnumPropertyParams NewProp_HandToSave;
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_RecordingName = { "RecordingName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRHandPoseComponent_eventSaveCurrentPose_Parms, RecordingName), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_HandToSave_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_HandToSave = { "HandToSave", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(OpenXRHandPoseComponent_eventSaveCurrentPose_Parms, HandToSave), Z_Construct_UEnum_OpenXRExpansionPlugin_EVRSkeletalHandIndex, METADATA_PARAMS(nullptr, 0) }; // 1054813515
-	void Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((OpenXRHandPoseComponent_eventSaveCurrentPose_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(OpenXRHandPoseComponent_eventSaveCurrentPose_Parms), &Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_RecordingName,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_HandToSave_Underlying,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_HandToSave,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::Function_MetaDataParams[] = {
-		{ "Category", "VRGestures" },
-		{ "CPP_Default_HandToSave", "EActionHandIndex_Right" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOpenXRHandPoseComponent, nullptr, "SaveCurrentPose", nullptr, nullptr, sizeof(Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::OpenXRHandPoseComponent_eventSaveCurrentPose_Parms), Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -852,14 +350,6 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 		static void NewProp_bDetectGestures_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bDetectGestures;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnNewGestureDetected_MetaData[];
-#endif
-		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnNewGestureDetected;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnGestureEnded_MetaData[];
-#endif
-		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGestureEnded;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_GesturesDB_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_GesturesDB;
@@ -904,10 +394,8 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 		(UObject* (*)())Z_Construct_UPackage__Script_OpenXRExpansionPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOpenXRHandPoseComponent_K2_DetectCurrentPose, "K2_DetectCurrentPose" }, // 3543659875
 		{ &Z_Construct_UFunction_UOpenXRHandPoseComponent_OnRep_SkeletalTransformLeft, "OnRep_SkeletalTransformLeft" }, // 1201667317
 		{ &Z_Construct_UFunction_UOpenXRHandPoseComponent_OnRep_SkeletalTransformRight, "OnRep_SkeletalTransformRight" }, // 462378440
-		{ &Z_Construct_UFunction_UOpenXRHandPoseComponent_SaveCurrentPose, "SaveCurrentPose" }, // 2880802281
 		{ &Z_Construct_UFunction_UOpenXRHandPoseComponent_Server_SendSkeletalTransforms, "Server_SendSkeletalTransforms" }, // 671216868
 		{ &Z_Construct_UFunction_UOpenXRHandPoseComponent_SetDetectGestures, "SetDetectGestures" }, // 3024653171
 	};
@@ -934,20 +422,6 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 		((UOpenXRHandPoseComponent*)Obj)->bDetectGestures = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_bDetectGestures = { "bDetectGestures", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UOpenXRHandPoseComponent), &Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_bDetectGestures_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_bDetectGestures_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_bDetectGestures_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnNewGestureDetected_MetaData[] = {
-		{ "Category", "VRGestures" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnNewGestureDetected = { "OnNewGestureDetected", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOpenXRHandPoseComponent, OnNewGestureDetected), Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureDetected__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnNewGestureDetected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnNewGestureDetected_MetaData)) }; // 2638633431
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnGestureEnded_MetaData[] = {
-		{ "Category", "VRGestures" },
-		{ "ModuleRelativePath", "Public/OpenXRHandPoseComponent.h" },
-	};
-#endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnGestureEnded = { "OnGestureEnded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOpenXRHandPoseComponent, OnGestureEnded), Z_Construct_UDelegateFunction_OpenXRExpansionPlugin_OpenXRGestureEnded__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnGestureEnded_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnGestureEnded_MetaData)) }; // 2749502622
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_GesturesDB_MetaData[] = {
 		{ "Category", "VRGestures" },
@@ -1023,8 +497,6 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRGesture>
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_ReplicationRateForSkeletalAnimations = { "ReplicationRateForSkeletalAnimations", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UOpenXRHandPoseComponent, ReplicationRateForSkeletalAnimations), METADATA_PARAMS(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_ReplicationRateForSkeletalAnimations_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_ReplicationRateForSkeletalAnimations_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_bDetectGestures,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnNewGestureDetected,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_OnGestureEnded,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_GesturesDB,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_bGetMockUpPoseForDebugging,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenXRHandPoseComponent_Statics::NewProp_HandSkeletalActions_Inner,
@@ -1262,24 +734,21 @@ template<> OPENXREXPANSIONPLUGIN_API UScriptStruct* StaticStruct<FOpenXRAnimInst
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UOpenXRAnimInstance);
 	UOpenXRAnimInstance::~UOpenXRAnimInstance() {}
-	struct Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics
 	{
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ScriptStructInfo[] = {
+	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ScriptStructInfo[] = {
 		{ FBPXRSkeletalRepContainer::StaticStruct, Z_Construct_UScriptStruct_FBPXRSkeletalRepContainer_Statics::NewStructOps, TEXT("BPXRSkeletalRepContainer"), &Z_Registration_Info_UScriptStruct_BPXRSkeletalRepContainer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FBPXRSkeletalRepContainer), 786361853U) },
-		{ FOpenXRGestureFingerPosition::StaticStruct, Z_Construct_UScriptStruct_FOpenXRGestureFingerPosition_Statics::NewStructOps, TEXT("OpenXRGestureFingerPosition"), &Z_Registration_Info_UScriptStruct_OpenXRGestureFingerPosition, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOpenXRGestureFingerPosition), 2064208691U) },
-		{ FOpenXRGesture::StaticStruct, Z_Construct_UScriptStruct_FOpenXRGesture_Statics::NewStructOps, TEXT("OpenXRGesture"), &Z_Registration_Info_UScriptStruct_OpenXRGesture, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOpenXRGesture), 2649084780U) },
 		{ FOpenXRAnimInstanceProxy::StaticStruct, Z_Construct_UScriptStruct_FOpenXRAnimInstanceProxy_Statics::NewStructOps, TEXT("OpenXRAnimInstanceProxy"), &Z_Registration_Info_UScriptStruct_OpenXRAnimInstanceProxy, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOpenXRAnimInstanceProxy), 1447175724U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UOpenXRGestureDatabase, UOpenXRGestureDatabase::StaticClass, TEXT("UOpenXRGestureDatabase"), &Z_Registration_Info_UClass_UOpenXRGestureDatabase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOpenXRGestureDatabase), 2796495060U) },
-		{ Z_Construct_UClass_UOpenXRHandPoseComponent, UOpenXRHandPoseComponent::StaticClass, TEXT("UOpenXRHandPoseComponent"), &Z_Registration_Info_UClass_UOpenXRHandPoseComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOpenXRHandPoseComponent), 34867874U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UOpenXRHandPoseComponent, UOpenXRHandPoseComponent::StaticClass, TEXT("UOpenXRHandPoseComponent"), &Z_Registration_Info_UClass_UOpenXRHandPoseComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOpenXRHandPoseComponent), 1062066462U) },
 		{ Z_Construct_UClass_UOpenXRAnimInstance, UOpenXRAnimInstance::StaticClass, TEXT("UOpenXRAnimInstance"), &Z_Registration_Info_UClass_UOpenXRAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOpenXRAnimInstance), 189459604U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_3894951607(TEXT("/Script/OpenXRExpansionPlugin"),
-		Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ClassInfo),
-		Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VRExpPluginExp_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ScriptStructInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_1851850714(TEXT("/Script/OpenXRExpansionPlugin"),
+		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ClassInfo),
+		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_OpenXRExpansionPlugin_Source_OpenXRExpansionPlugin_Public_OpenXRHandPoseComponent_h_Statics::ScriptStructInfo),
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

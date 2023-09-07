@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionEditor_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000100,
-				0x5DD61D3B,
+				0xCB689402,
 				0x4DAA4D46,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeOpenXRExpansionEditor_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_OpenXRExpansionEditor.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OpenXRExpansionEditor(Z_Construct_UPackage__Script_OpenXRExpansionEditor, TEXT("/Script/OpenXRExpansionEditor"), Z_Registration_Info_UPackage__Script_OpenXRExpansionEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x5DD61D3B, 0x4DAA4D46));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OpenXRExpansionEditor(Z_Construct_UPackage__Script_OpenXRExpansionEditor, TEXT("/Script/OpenXRExpansionEditor"), Z_Registration_Info_UPackage__Script_OpenXRExpansionEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xCB689402, 0x4DAA4D46));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

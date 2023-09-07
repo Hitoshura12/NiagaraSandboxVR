@@ -35,6 +35,9 @@
 /FUNCTIONPADMIN:6
 "C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
 "C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionEditor\Module.VRExpansionEditor.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionEditor\HandSocketComponentDetails.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionEditor\VRExpansionEditor.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionEditor\VRGlobalSettingsDetails.cpp.obj"
 "C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionEditor\Default.rc2.res"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEd\UnrealEditor-UnrealEd.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\BlueprintGraph\UnrealEditor-BlueprintGraph.lib"

@@ -204,10 +204,10 @@ void EmptyLinkFunctionForGeneratedCodeGS_Default() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripScripts_GS_Default_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGS_Default, UGS_Default::StaticClass, TEXT("UGS_Default"), &Z_Registration_Info_UClass_UGS_Default, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGS_Default), 1595839954U) },
-		{ Z_Construct_UClass_UGS_ExtendedDefault, UGS_ExtendedDefault::StaticClass, TEXT("UGS_ExtendedDefault"), &Z_Registration_Info_UClass_UGS_ExtendedDefault, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGS_ExtendedDefault), 3753306911U) },
+		{ Z_Construct_UClass_UGS_Default, UGS_Default::StaticClass, TEXT("UGS_Default"), &Z_Registration_Info_UClass_UGS_Default, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGS_Default), 1158942564U) },
+		{ Z_Construct_UClass_UGS_ExtendedDefault, UGS_ExtendedDefault::StaticClass, TEXT("UGS_ExtendedDefault"), &Z_Registration_Info_UClass_UGS_ExtendedDefault, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGS_ExtendedDefault), 4239983710U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripScripts_GS_Default_h_3327938471(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripScripts_GS_Default_h_1176220593(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripScripts_GS_Default_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_GripScripts_GS_Default_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

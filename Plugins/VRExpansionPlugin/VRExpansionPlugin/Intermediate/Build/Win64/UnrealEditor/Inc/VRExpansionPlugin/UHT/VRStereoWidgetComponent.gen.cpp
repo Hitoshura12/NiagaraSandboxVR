@@ -417,6 +417,11 @@ void EmptyLinkFunctionForGeneratedCodeVRStereoWidgetComponent() {}
 #endif
 		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_Shape;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bAlwaysVisible_MetaData[];
+#endif
+		static void NewProp_bAlwaysVisible_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bAlwaysVisible;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_bRenderBothStereoAndWorld_MetaData[];
 #endif
 		static void NewProp_bRenderBothStereoAndWorld_SetBit(void* Obj);
@@ -497,6 +502,19 @@ void EmptyLinkFunctionForGeneratedCodeVRStereoWidgetComponent() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Shape = { "Shape", nullptr, (EPropertyFlags)0x001600000208001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRStereoWidgetComponent, Shape), Z_Construct_UClass_UStereoLayerShape_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Shape_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Shape_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible_MetaData[] = {
+		{ "Category", "StereoLayer" },
+		{ "Comment", "/** If true then this stereo widget will skip visibility checks when in stereo mode */" },
+		{ "ModuleRelativePath", "Public/VRStereoWidgetComponent.h" },
+		{ "ToolTip", "If true then this stereo widget will skip visibility checks when in stereo mode" },
+	};
+#endif
+	void Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible_SetBit(void* Obj)
+	{
+		((UVRStereoWidgetComponent*)Obj)->bAlwaysVisible = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible = { "bAlwaysVisible", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UVRStereoWidgetComponent), &Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible_SetBit, METADATA_PARAMS(Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bRenderBothStereoAndWorld_MetaData[] = {
 		{ "Category", "StereoLayer" },
@@ -612,6 +630,7 @@ void EmptyLinkFunctionForGeneratedCodeVRStereoWidgetComponent() {}
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Priority = { "Priority", nullptr, (EPropertyFlags)0x001000000000001d, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRStereoWidgetComponent, Priority), METADATA_PARAMS(Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Priority_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Priority_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVRStereoWidgetComponent_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_Shape,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bAlwaysVisible,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bRenderBothStereoAndWorld,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bDrawWithoutStereo,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRStereoWidgetComponent_Statics::NewProp_bUseEpicsWorldLockedStereo,
@@ -659,9 +678,9 @@ void EmptyLinkFunctionForGeneratedCodeVRStereoWidgetComponent() {}
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRStereoWidgetComponent_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_UVRStereoWidgetRenderComponent, UVRStereoWidgetRenderComponent::StaticClass, TEXT("UVRStereoWidgetRenderComponent"), &Z_Registration_Info_UClass_UVRStereoWidgetRenderComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRStereoWidgetRenderComponent), 4265548826U) },
-		{ Z_Construct_UClass_UVRStereoWidgetComponent, UVRStereoWidgetComponent::StaticClass, TEXT("UVRStereoWidgetComponent"), &Z_Registration_Info_UClass_UVRStereoWidgetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRStereoWidgetComponent), 121043573U) },
+		{ Z_Construct_UClass_UVRStereoWidgetComponent, UVRStereoWidgetComponent::StaticClass, TEXT("UVRStereoWidgetComponent"), &Z_Registration_Info_UClass_UVRStereoWidgetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRStereoWidgetComponent), 2336792954U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRStereoWidgetComponent_h_2115476738(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRStereoWidgetComponent_h_3681086876(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRStereoWidgetComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRStereoWidgetComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -36,6 +36,9 @@
 /FUNCTIONPADMIN:6
 "C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
 "C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\Module.OpenVRExpansionPlugin.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\OpenVRExpansionFunctionLibrary.gen.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\OpenVRExpansionPlugin.init.gen.cpp.obj"
+"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\SteamVRKeyboardComponent.gen.cpp.obj"
 "C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\OpenVRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\OpenVRExpansionPlugin\Default.rc2.res"
 "ThirdParty\OpenVR\OpenVRv1_5_17\lib\win64\openvr_api.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"

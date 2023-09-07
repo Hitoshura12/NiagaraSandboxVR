@@ -2,9 +2,10 @@
 	"RemapUnityFiles": 
 	{
 		"Module.VRExpansionEditor.cpp.obj": [
-			"HandSocketComponentDetails.cpp.obj",
 			"HandSocketVisualizer.cpp.obj",
-			"VRExpansionEditor.cpp.obj"
+			"HandSocketComponentDetails.cpp.obj",
+			"VRExpansionEditor.cpp.obj",
+			"VRGlobalSettingsDetails.cpp.obj"
 		]
 	}
 }

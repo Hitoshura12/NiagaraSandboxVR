@@ -1,6 +1,6 @@
-"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Private\VRBaseCharacter.cpp"
+C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Private\VRBaseCharacter.cpp
 /I .
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Private"
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd\UHT
 /I Editor
 /I Programs\UnrealLightmass\Public
@@ -270,9 +270,9 @@
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT
 /I Runtime\AIModule\Public
 /I Runtime\AIModule\Classes
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Inc\VRExpansionPlugin\UHT"
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source"
-/I "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Public"
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Inc\VRExpansionPlugin\UHT
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source
+/I C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Source\VRExpansionPlugin\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality\UHT
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh\UHT
@@ -290,16 +290,16 @@
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/FI"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Definitions.VRExpansionPlugin.h"
-/Yu"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"D:\Documents\Unreal Projects\VRExpPluginExp\Intermediate\Build\Win64\VRExpPluginExampleEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-/Fo"D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\VRBaseCharacter.cpp.obj"
-/sourceDependencies "D:\Documents\Unreal Projects\VRExpPluginExp\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\VRBaseCharacter.cpp.dep.json"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h"
+/FI"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\Definitions.VRExpansionPlugin.h"
+/Yu"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h"
+/Fp"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Intermediate\Build\Win64\NiagaraSandboxVREditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.pch"
+/Fo"C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\VRBaseCharacter.cpp.obj"
+/sourceDependencies C:\Users\SG\Desktop\UNREAL\NiagaraSandboxVR\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UnrealEditor\Development\VRExpansionPlugin\VRBaseCharacter.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi

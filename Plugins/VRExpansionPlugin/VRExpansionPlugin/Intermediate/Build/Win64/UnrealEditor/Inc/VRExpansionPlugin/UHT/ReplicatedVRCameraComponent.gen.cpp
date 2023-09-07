@@ -198,6 +198,23 @@ void EmptyLinkFunctionForGeneratedCodeReplicatedVRCameraComponent() {}
 		static void NewProp_bSmoothReplicatedMotion_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bSmoothReplicatedMotion;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bUseExponentialSmoothing_MetaData[];
+#endif
+		static void NewProp_bUseExponentialSmoothing_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bUseExponentialSmoothing;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_InterpolationSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_InterpolationSpeed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_NetworkMaxSmoothUpdateDistance_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_NetworkMaxSmoothUpdateDistance;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_NetworkNoSmoothUpdateDistance_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_NetworkNoSmoothUpdateDistance;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_NetUpdateRate_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_NetUpdateRate;
@@ -419,11 +436,55 @@ void EmptyLinkFunctionForGeneratedCodeReplicatedVRCameraComponent() {}
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bSmoothReplicatedMotion = { "bSmoothReplicatedMotion", nullptr, (EPropertyFlags)0x0010000000000025, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UReplicatedVRCameraComponent), &Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bSmoothReplicatedMotion_SetBit, METADATA_PARAMS(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bSmoothReplicatedMotion_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bSmoothReplicatedMotion_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing_MetaData[] = {
+		{ "Category", "ReplicatedCamera|Networking|Smoothing" },
+		{ "Comment", "// If true then we will use exponential smoothing with buffered correction\n" },
+		{ "editcondition", "bSmoothReplicatedMotion" },
+		{ "ModuleRelativePath", "Public/ReplicatedVRCameraComponent.h" },
+		{ "ToolTip", "If true then we will use exponential smoothing with buffered correction" },
+	};
+#endif
+	void Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing_SetBit(void* Obj)
+	{
+		((UReplicatedVRCameraComponent*)Obj)->bUseExponentialSmoothing = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing = { "bUseExponentialSmoothing", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UReplicatedVRCameraComponent), &Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_InterpolationSpeed_MetaData[] = {
+		{ "Category", "ReplicatedCamera|Networking|Smoothing" },
+		{ "Comment", "// Timestep of smoothing translation\n" },
+		{ "editcondition", "bUseExponentialSmoothing" },
+		{ "ModuleRelativePath", "Public/ReplicatedVRCameraComponent.h" },
+		{ "ToolTip", "Timestep of smoothing translation" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_InterpolationSpeed = { "InterpolationSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UReplicatedVRCameraComponent, InterpolationSpeed), METADATA_PARAMS(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_InterpolationSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_InterpolationSpeed_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance_MetaData[] = {
+		{ "Category", "ReplicatedCamera|Networking|Smoothing" },
+		{ "Comment", "// Max distance to allow smoothing before snapping the remainder\n" },
+		{ "editcondition", "bUseExponentialSmoothing" },
+		{ "ModuleRelativePath", "Public/ReplicatedVRCameraComponent.h" },
+		{ "ToolTip", "Max distance to allow smoothing before snapping the remainder" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance = { "NetworkMaxSmoothUpdateDistance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UReplicatedVRCameraComponent, NetworkMaxSmoothUpdateDistance), METADATA_PARAMS(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance_MetaData[] = {
+		{ "Category", "ReplicatedCamera|Networking|Smoothing" },
+		{ "Comment", "// Max distance to allow smoothing before snapping entirely to the new position\n" },
+		{ "editcondition", "bUseExponentialSmoothing" },
+		{ "ModuleRelativePath", "Public/ReplicatedVRCameraComponent.h" },
+		{ "ToolTip", "Max distance to allow smoothing before snapping entirely to the new position" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance = { "NetworkNoSmoothUpdateDistance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UReplicatedVRCameraComponent, NetworkNoSmoothUpdateDistance), METADATA_PARAMS(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetUpdateRate_MetaData[] = {
 		{ "Category", "ReplicatedCamera|Networking" },
-		{ "Comment", "// Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick).\n" },
+		{ "Comment", "// Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick).\n// On dedicated servers the update rate should be at or lower than the server tick rate for smoothing to work\n" },
 		{ "ModuleRelativePath", "Public/ReplicatedVRCameraComponent.h" },
-		{ "ToolTip", "Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick)." },
+		{ "ToolTip", "Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick).\nOn dedicated servers the update rate should be at or lower than the server tick rate for smoothing to work" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetUpdateRate = { "NetUpdateRate", nullptr, (EPropertyFlags)0x0010000000000025, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UReplicatedVRCameraComponent, NetUpdateRate), METADATA_PARAMS(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetUpdateRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetUpdateRate_MetaData)) };
@@ -444,6 +505,10 @@ void EmptyLinkFunctionForGeneratedCodeReplicatedVRCameraComponent() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bAutoSetLockToHmd,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_ReplicatedCameraTransform,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bSmoothReplicatedMotion,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_bUseExponentialSmoothing,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_InterpolationSpeed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkMaxSmoothUpdateDistance,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetworkNoSmoothUpdateDistance,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::NewProp_NetUpdateRate,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UReplicatedVRCameraComponent_Statics::StaticCppClassTypeInfo = {
@@ -497,9 +562,9 @@ void EmptyLinkFunctionForGeneratedCodeReplicatedVRCameraComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_ReplicatedVRCameraComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UReplicatedVRCameraComponent, UReplicatedVRCameraComponent::StaticClass, TEXT("UReplicatedVRCameraComponent"), &Z_Registration_Info_UClass_UReplicatedVRCameraComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UReplicatedVRCameraComponent), 3087720778U) },
+		{ Z_Construct_UClass_UReplicatedVRCameraComponent, UReplicatedVRCameraComponent::StaticClass, TEXT("UReplicatedVRCameraComponent"), &Z_Registration_Info_UClass_UReplicatedVRCameraComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UReplicatedVRCameraComponent), 742886821U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_ReplicatedVRCameraComponent_h_4018022912(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_ReplicatedVRCameraComponent_h_4107982174(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_ReplicatedVRCameraComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_ReplicatedVRCameraComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

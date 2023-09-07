@@ -741,11 +741,6 @@ void EmptyLinkFunctionForGeneratedCodeVRLeverComponent() {}
 #endif
 		static const UECodeGen_Private::FStructPropertyParams NewProp_CurrentLeverForwardVector;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsPhysicsLever_MetaData[];
-#endif
-		static void NewProp_bIsPhysicsLever_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsPhysicsLever;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_bUngripAtTargetRotation_MetaData[];
 #endif
 		static void NewProp_bUngripAtTargetRotation_SetBit(void* Obj);
@@ -970,17 +965,6 @@ void EmptyLinkFunctionForGeneratedCodeVRLeverComponent() {}
 	};
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_CurrentLeverForwardVector = { "CurrentLeverForwardVector", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRLeverComponent, CurrentLeverForwardVector), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_CurrentLeverForwardVector_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_CurrentLeverForwardVector_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever_MetaData[] = {
-		{ "Category", "VRLeverComponent" },
-		{ "ModuleRelativePath", "Public/Interactibles/VRLeverComponent.h" },
-	};
-#endif
-	void Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever_SetBit(void* Obj)
-	{
-		((UVRLeverComponent*)Obj)->bIsPhysicsLever = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever = { "bIsPhysicsLever", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(UVRLeverComponent), &Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever_SetBit, METADATA_PARAMS(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bUngripAtTargetRotation_MetaData[] = {
 		{ "Category", "VRLeverComponent" },
@@ -1332,7 +1316,7 @@ void EmptyLinkFunctionForGeneratedCodeVRLeverComponent() {}
 		{ "ToolTip", "Called when a object is gripped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnGripped = { "OnGripped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRLeverComponent, OnGripped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnGripped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnGripped_MetaData)) }; // 751591806
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnGripped = { "OnGripped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRLeverComponent, OnGripped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnGripped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnGripped_MetaData)) }; // 3502606547
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped_MetaData[] = {
 		{ "Category", "Grip Events" },
@@ -1341,14 +1325,13 @@ void EmptyLinkFunctionForGeneratedCodeVRLeverComponent() {}
 		{ "ToolTip", "Called when a object is dropped" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped = { "OnDropped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRLeverComponent, OnDropped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped_MetaData)) }; // 1793324043
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped = { "OnDropped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UVRLeverComponent, OnDropped), Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped_MetaData)) }; // 3758456689
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVRLeverComponent_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnLeverStateChanged,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnLeverFinishedLerping,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_CurrentLeverAngle,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_AllCurrentLeverAngles,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_CurrentLeverForwardVector,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bIsPhysicsLever,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_bUngripAtTargetRotation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_LeverRotationAxis_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_LeverRotationAxis,
@@ -1388,7 +1371,7 @@ void EmptyLinkFunctionForGeneratedCodeVRLeverComponent() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVRLeverComponent_Statics::NewProp_OnDropped,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UVRLeverComponent_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UVRGripInterface_NoRegister, (int32)VTABLE_OFFSET(UVRLeverComponent, IVRGripInterface), false },  // 2675698684
+			{ Z_Construct_UClass_UVRGripInterface_NoRegister, (int32)VTABLE_OFFSET(UVRLeverComponent, IVRGripInterface), false },  // 3570845334
 			{ Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister, (int32)VTABLE_OFFSET(UVRLeverComponent, IGameplayTagAssetInterface), false },  // 3654419898
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UVRLeverComponent_Statics::StaticCppClassTypeInfo = {
@@ -1449,9 +1432,9 @@ void EmptyLinkFunctionForGeneratedCodeVRLeverComponent() {}
 		{ EVRInteractibleLeverReturnType_StaticEnum, TEXT("EVRInteractibleLeverReturnType"), &Z_Registration_Info_UEnum_EVRInteractibleLeverReturnType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 764049809U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVRLeverComponent, UVRLeverComponent::StaticClass, TEXT("UVRLeverComponent"), &Z_Registration_Info_UClass_UVRLeverComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRLeverComponent), 1161200133U) },
+		{ Z_Construct_UClass_UVRLeverComponent, UVRLeverComponent::StaticClass, TEXT("UVRLeverComponent"), &Z_Registration_Info_UClass_UVRLeverComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRLeverComponent), 1962223823U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_1410750844(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_687250123(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_Interactibles_VRLeverComponent_h_Statics::EnumInfo));

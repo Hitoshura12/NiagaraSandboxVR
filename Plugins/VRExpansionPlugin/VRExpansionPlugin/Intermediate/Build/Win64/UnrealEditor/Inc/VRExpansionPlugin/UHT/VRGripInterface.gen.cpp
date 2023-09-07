@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnGripSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnGripSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GrippingController,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnGripSignature__DelegateSignature_Statics::NewProp_GripInformation,
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnDropSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_VRExpansionPlugin_eventVROnDropSignature_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	void Z_Construct_UDelegateFunction_VRExpansionPlugin_VROnDropSignature__DelegateSignature_Statics::NewProp_bWasSocketed_SetBit(void* Obj)
 	{
 		((_Script_VRExpansionPlugin_eventVROnDropSignature_Parms*)Obj)->bWasSocketed = 1;
@@ -1229,7 +1229,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnChildGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnChildGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GrippingController,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnChildGrip_Statics::NewProp_GripInformation,
@@ -1281,7 +1281,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnChildGripRelease_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnChildGripRelease_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease_Statics::NewProp_bWasSocketed_SetBit(void* Obj)
 	{
 		((VRGripInterface_eventOnChildGripRelease_Parms*)Obj)->bWasSocketed = 1;
@@ -1387,7 +1387,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GrippingController,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnGrip_Statics::NewProp_GripInformation,
@@ -1439,7 +1439,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnGripRelease_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnGripRelease_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	void Z_Construct_UFunction_UVRGripInterface_OnGripRelease_Statics::NewProp_bWasSocketed_SetBit(void* Obj)
 	{
 		((VRGripInterface_eventOnGripRelease_Parms*)Obj)->bWasSocketed = 1;
@@ -1539,7 +1539,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnSecondaryGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnSecondaryGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_GripOwningController,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip_Statics::NewProp_SecondaryGripComponent,
@@ -1600,7 +1600,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnSecondaryGripRelease_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventOnSecondaryGripRelease_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_GripOwningController,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease_Statics::NewProp_ReleasingSecondaryGripComponent,
@@ -1909,7 +1909,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventTickGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GripInformation_MetaData)) }; // 2017937111
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GripInformation = { "GripInformation", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventTickGrip_Parms, GripInformation), Z_Construct_UScriptStruct_FBPActorGripInformation, METADATA_PARAMS(Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GripInformation_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GripInformation_MetaData)) }; // 3975863413
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_DeltaTime = { "DeltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(VRGripInterface_eventTickGrip_Parms, DeltaTime), METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVRGripInterface_TickGrip_Statics::NewProp_GrippingController,
@@ -1965,15 +1965,15 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ &Z_Construct_UFunction_UVRGripInterface_GripLateUpdateSetting, "GripLateUpdateSetting" }, // 2235629696
 		{ &Z_Construct_UFunction_UVRGripInterface_GripMovementReplicationType, "GripMovementReplicationType" }, // 3616229952
 		{ &Z_Construct_UFunction_UVRGripInterface_IsHeld, "IsHeld" }, // 1251139012
-		{ &Z_Construct_UFunction_UVRGripInterface_OnChildGrip, "OnChildGrip" }, // 3346580047
-		{ &Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease, "OnChildGripRelease" }, // 2187767306
+		{ &Z_Construct_UFunction_UVRGripInterface_OnChildGrip, "OnChildGrip" }, // 894411906
+		{ &Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease, "OnChildGripRelease" }, // 1219051492
 		{ &Z_Construct_UFunction_UVRGripInterface_OnEndSecondaryUsed, "OnEndSecondaryUsed" }, // 836404452
 		{ &Z_Construct_UFunction_UVRGripInterface_OnEndUsed, "OnEndUsed" }, // 2119518948
-		{ &Z_Construct_UFunction_UVRGripInterface_OnGrip, "OnGrip" }, // 1497962831
-		{ &Z_Construct_UFunction_UVRGripInterface_OnGripRelease, "OnGripRelease" }, // 1351367878
+		{ &Z_Construct_UFunction_UVRGripInterface_OnGrip, "OnGrip" }, // 463174417
+		{ &Z_Construct_UFunction_UVRGripInterface_OnGripRelease, "OnGripRelease" }, // 477357794
 		{ &Z_Construct_UFunction_UVRGripInterface_OnInput, "OnInput" }, // 1194024698
-		{ &Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip, "OnSecondaryGrip" }, // 2186089703
-		{ &Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease, "OnSecondaryGripRelease" }, // 3541568482
+		{ &Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip, "OnSecondaryGrip" }, // 3827285362
+		{ &Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease, "OnSecondaryGripRelease" }, // 2001085394
 		{ &Z_Construct_UFunction_UVRGripInterface_OnSecondaryUsed, "OnSecondaryUsed" }, // 78363558
 		{ &Z_Construct_UFunction_UVRGripInterface_OnUsed, "OnUsed" }, // 3798922349
 		{ &Z_Construct_UFunction_UVRGripInterface_RequestsSocketing, "RequestsSocketing" }, // 1464720169
@@ -1981,7 +1981,7 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		{ &Z_Construct_UFunction_UVRGripInterface_SetHeld, "SetHeld" }, // 1609101252
 		{ &Z_Construct_UFunction_UVRGripInterface_SimulateOnDrop, "SimulateOnDrop" }, // 1954134977
 		{ &Z_Construct_UFunction_UVRGripInterface_TeleportBehavior, "TeleportBehavior" }, // 3057543620
-		{ &Z_Construct_UFunction_UVRGripInterface_TickGrip, "TickGrip" }, // 1460637200
+		{ &Z_Construct_UFunction_UVRGripInterface_TickGrip, "TickGrip" }, // 4137923387
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UVRGripInterface_Statics::Class_MetaDataParams[] = {
@@ -2535,9 +2535,9 @@ void EmptyLinkFunctionForGeneratedCodeVRGripInterface() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRGripInterface_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVRGripInterface, UVRGripInterface::StaticClass, TEXT("UVRGripInterface"), &Z_Registration_Info_UClass_UVRGripInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRGripInterface), 2675698684U) },
+		{ Z_Construct_UClass_UVRGripInterface, UVRGripInterface::StaticClass, TEXT("UVRGripInterface"), &Z_Registration_Info_UClass_UVRGripInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVRGripInterface), 3570845334U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRGripInterface_h_465354018(TEXT("/Script/VRExpansionPlugin"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRGripInterface_h_170694315(TEXT("/Script/VRExpansionPlugin"),
 		Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRGripInterface_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_SG_Desktop_UNREAL_NiagaraSandboxVR_Plugins_VRExpansionPlugin_VRExpansionPlugin_Source_VRExpansionPlugin_Public_VRGripInterface_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
