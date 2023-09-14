@@ -49,6 +49,15 @@
 			]
 		},
 		{
+			"Name": "OpenXRMsftHandInteraction",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Android",
+				"HoloLens"
+			]
+		},
+		{
 			"Name": "OpenVRExpansionPlugin",
 			"Enabled": true
 		},
@@ -71,10 +80,6 @@
 				"Android",
 				"HoloLens"
 			]
-		},
-		{
-			"Name": "XRVisualization",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
