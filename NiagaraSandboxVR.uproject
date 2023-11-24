@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.1",
+	"EngineAssociation": "5.3",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -16,16 +16,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "OpenXR",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Linux",
-				"Android",
-				"HoloLens"
-			]
-		},
-		{
 			"Name": "OculusXR",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
@@ -39,27 +29,8 @@
 			"Enabled": true
 		},
 		{
-			"Name": "OpenXRHandTracking",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Linux",
-				"Android",
-				"HoloLens"
-			]
-		},
-		{
-			"Name": "OpenXRMsftHandInteraction",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Android",
-				"HoloLens"
-			]
-		},
-		{
 			"Name": "OpenVRExpansionPlugin",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "VRExpansionPlugin",
@@ -67,8 +38,7 @@
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
-				"Android",
-				"HoloLens"
+				"Android"
 			]
 		},
 		{
@@ -77,8 +47,29 @@
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
-				"Android",
-				"HoloLens"
+				"Android"
+			]
+		},
+		{
+			"Name": "XRVisualization",
+			"Enabled": true
+		},
+		{
+			"Name": "OpenXR",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android"
+			]
+		},
+		{
+			"Name": "OpenXRHandTracking",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android"
 			]
 		}
 	],
